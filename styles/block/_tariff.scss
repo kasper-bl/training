@@ -1,0 +1,48 @@
+.tariff{
+    h2{
+        padding: 50px 0;
+        color: var(--color-text-dark-grey);
+        @include text-fluid(36,36)
+    }
+    .variant_tariff{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+
+        .tariff_card{
+            width: 250px;
+
+            .price{
+                padding-bottom: 30px;
+
+                h4{
+                    color: var(--color-text-dark-grey);
+                    @include text-fluid(24,24);
+                }
+
+                p{
+                    @include text-fluid(24,24);
+                }
+                span{
+                    color: var(--blue-color);
+                }
+            }
+            .card_info{
+                
+                .card_text{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding-bottom: 20px;
+                }
+
+                a{
+                    padding: 14px 56px;
+                    border-radius: 15px;
+                    color: var(--blue-color);
+
+                }
+            }
+        }
+    }
+}

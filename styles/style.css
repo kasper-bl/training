@@ -1,5 +1,6 @@
 body {
   background-color: var(--color-body-backgroung);
+  font-size: 18px;
 }
 
 a {
@@ -190,7 +191,7 @@ header .header_main .header_controls .button {
 .advantages h2 {
   padding: 50px 0;
   color: var(--color-text-dark-grey);
-  font-size: clamp(30px, 2.0833333333vw, 30px);
+  font-size: clamp(36px, 2.5vw, 36px);
 }
 .advantages .advantages_items {
   display: -ms-grid;
@@ -223,7 +224,7 @@ header .header_main .header_controls .button {
 }
 .how_we_work .how_we_work_content h2 {
   padding: 50px 0 30px 0;
-  font-size: clamp(30px, 2.0833333333vw, 30px);
+  font-size: clamp(36px, 2.5vw, 36px);
   color: var(--color-text-dark-grey);
 }
 .how_we_work .how_we_work_content .how_we_work_item {
@@ -288,4 +289,48 @@ header .header_main .header_controls .button {
   font-weight: 500;
   width: 200px;
   text-align: center;
+}
+
+.tariff h2 {
+  padding: 50px 0;
+  color: var(--color-text-dark-grey);
+  font-size: clamp(36px, 2.5vw, 36px);
+}
+.tariff .variant_tariff {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.tariff .variant_tariff .tariff_card {
+  width: 250px;
+}
+.tariff .variant_tariff .tariff_card .price {
+  padding-bottom: 30px;
+}
+.tariff .variant_tariff .tariff_card .price h4 {
+  color: var(--color-text-dark-grey);
+  font-size: clamp(24px, 1.6666666667vw, 24px);
+}
+.tariff .variant_tariff .tariff_card .price p {
+  font-size: clamp(24px, 1.6666666667vw, 24px);
+}
+.tariff .variant_tariff .tariff_card .price span {
+  color: var(--blue-color);
+}
+.tariff .variant_tariff .tariff_card .card_info .card_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.tariff .variant_tariff .tariff_card .card_info a {
+  padding: 14px 56px;
+  border-radius: 15px;
+  color: var(--blue-color);
 }
