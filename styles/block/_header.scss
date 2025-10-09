@@ -1,16 +1,60 @@
-header{
-    .header_main{
-            display: flex;
-            align-items: center;
-            p:nth-child(1){
-            color: var(--logo-color);
-            font-size: @include text-fluid(5);
-            
-        }
-    }
-    .language{
+header {
+    max-height: 80px;
+
+    .header_main {
+
         display: flex;
         align-items: center;
-    }
+        justify-content: space-between;
     
+        .logo {
+            color: var(--blue-color);
+            @include text-fluid(18, 18); 
+            font-weight: 500;
+        }
+
+        .header_nav{
+            display: flex;
+            align-items: center;
+            gap: 20vw;
+
+            nav{
+                display: flex;
+                gap: 30px;
+                
+                a{
+                    color: var(--color-text-gray);
+                }
+            } 
+        }
+
+        .header_controls{
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        
+            .language {
+                display: flex;
+                align-items: center;
+
+                p:first-child{
+                    color: var(--blue-color);
+                }
+
+                p{
+                    color: var(--color-text-gray);
+                }
+            }
+
+            .button{
+
+                color: var(--color-text-while);
+                padding: 10px 12px;
+                background-color: var(--blue-color);
+                border-radius: 15px;
+                font-weight: 500;
+            }
+        }
+    }     
 }

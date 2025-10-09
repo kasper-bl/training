@@ -6,11 +6,40 @@ a {
   text-decoration: none;
 }
 
-:root {
-  --color-body-backgroung:#F2F2F2;
-  --logo-color: #4754EB;
+.wrapper {
+  background-color: var(--wraapper-color);
+  border-radius: 15px;
+  padding: 28px 56px;
 }
 
+.container {
+  background-color: var(--color-body-backgroung);
+  padding: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+:root {
+  --color-body-backgroung:#F2F2F2;
+  --blue-color: #4754EB;
+  --wraapper-color: #FFFFFF;
+  --color-text-gray: #808080;
+  --color-text-while: #fff;
+}
+
+header {
+  max-height: 80px;
+}
 header .header_main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,16 +47,60 @@ header .header_main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-header .header_main p:nth-child(1) {
-  color: var(--logo-color);
-  font-size: 1.25vw;
+header .header_main .logo {
+  color: var(--blue-color);
+  font-size: clamp(18px, 1.25vw, 18px);
+  font-weight: 500;
 }
-header .language {
+header .header_main .header_nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20vw;
+}
+header .header_main .header_nav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+header .header_main .header_nav nav a {
+  color: var(--color-text-gray);
+}
+header .header_main .header_controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+header .header_main .header_controls .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header_main .header_controls .language p:first-child {
+  color: var(--blue-color);
+}
+header .header_main .header_controls .language p {
+  color: var(--color-text-gray);
+}
+header .header_main .header_controls .button {
+  color: var(--color-text-while);
+  padding: 10px 12px;
+  background-color: var(--blue-color);
+  border-radius: 15px;
+  font-weight: 500;
 }
