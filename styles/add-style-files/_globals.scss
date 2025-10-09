@@ -8,10 +8,18 @@ a{
 .wrapper{
   background-color: var(--wraapper-color);
   border-radius: 15px;
-  padding: 28px 56px;
+
 }
 
 .container{
   background-color: var(--color-body-backgroung);
   padding: 20px;
+}
+
+.padding{
+  padding: 28px 56px;
+}
+
+p{
+  color: var(--color-text-gray);
 }

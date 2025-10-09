@@ -9,12 +9,19 @@ a {
 .wrapper {
   background-color: var(--wraapper-color);
   border-radius: 15px;
-  padding: 28px 56px;
 }
 
 .container {
   background-color: var(--color-body-backgroung);
   padding: 20px;
+}
+
+.padding {
+  padding: 28px 56px;
+}
+
+p {
+  color: var(--color-text-gray);
 }
 
 * {
@@ -35,6 +42,7 @@ a {
   --wraapper-color: #FFFFFF;
   --color-text-gray: #808080;
   --color-text-while: #fff;
+  --color-text-dark-grey:#1A1A1A;
 }
 
 header {
@@ -103,4 +111,78 @@ header .header_main .header_controls .button {
   background-color: var(--blue-color);
   border-radius: 15px;
   font-weight: 500;
+}
+
+.main_banner {
+  height: 720px;
+  background: radial-gradient(circle at bottom left, #D3B9E5, #D1D0F6, transparent 35%);
+}
+.main_banner .main_banner_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main_banner .main_banner_container .main_banner_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.main_banner .main_banner_container .main_banner_text h1 {
+  font-size: clamp(56px, 3.8888888889vw, 56px);
+  color: var(--color-text-dark-grey);
+  padding-bottom: 25px;
+}
+.main_banner .main_banner_container .main_banner_text .email_form {
+  position: relative;
+}
+.main_banner .main_banner_container .main_banner_text .email_form input {
+  background: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(255, 255, 255, 0.5)), color-stop(0%, rgb(255, 255, 255)));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 100%, rgb(255, 255, 255) 0%);
+  width: 420px;
+  padding: 15px 16px;
+  border-radius: 10px;
+  border: none;
+}
+.main_banner .main_banner_container .main_banner_text .email_form .submit_button {
+  position: absolute;
+  right: 240px;
+  top: 7%;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: var(--blue-color);
+  font-weight: 600;
+  font-size: clamp(17px, 1.1805555556vw, 17px);
+  border: none;
+  border-radius: 5px;
+}
+.main_banner .main_banner_container .main_banner_text p {
+  color: #595959;
+  font-size: clamp(12px, 0.8333333333vw, 12px);
+}
+.main_banner .main_banner_container .main_banner_text p a {
+  color: var(--blue-color);
+}
+.main_banner .main_banner_container .main_banner_text .mouse {
+  padding-top: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.main_banner .main_banner_container .main_banner_text .mouse p {
+  color: var(--color-text-while);
 }
