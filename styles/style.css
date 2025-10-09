@@ -1,0 +1,33 @@
+body {
+  background-color: var(--color-body-backgroung);
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --color-body-backgroung:#F2F2F2;
+  --logo-color: #4754EB;
+}
+
+header .header_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header_main p:nth-child(1) {
+  color: var(--logo-color);
+  font-size: 1.25vw;
+}
+header .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

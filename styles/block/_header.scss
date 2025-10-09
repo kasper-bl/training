@@ -1,0 +1,16 @@
+header{
+    .header_main{
+            display: flex;
+            align-items: center;
+            p:nth-child(1){
+            color: var(--logo-color);
+            font-size: @include text-fluid(5);
+            
+        }
+    }
+    .language{
+        display: flex;
+        align-items: center;
+    }
+    
+}
