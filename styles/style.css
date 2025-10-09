@@ -186,3 +186,33 @@ header .header_main .header_controls .button {
 .main_banner .main_banner_container .main_banner_text .mouse p {
   color: var(--color-text-while);
 }
+
+.advantages h2 {
+  padding: 50px 0;
+  color: var(--color-text-dark-grey);
+  font-size: clamp(30px, 2.0833333333vw, 30px);
+}
+.advantages .advantages_items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.advantages .advantages_items .advantages_items_card {
+  max-width: 300px;
+}
+.advantages .advantages_items .advantages_items_card .img_emoji {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding-bottom: 25px;
+}
+.advantages .advantages_items .advantages_items_card .img_emoji h4 {
+  font-size: clamp(20px, 1.3888888889vw, 20px);
+  color: var(--color-text-dark-grey);
+}
