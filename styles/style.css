@@ -430,3 +430,40 @@ header .header_main .header_controls .button {
           box-shadow: 0px 2px 5px rgba(48, 50, 57, 0.1294117647);
   padding: 10px 5px;
 }
+
+.feedback .feedback_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.feedback .feedback_text h2 {
+  color: var(--color-text-dark-grey);
+  font-size: clamp(36px, 2.5vw, 36px);
+}
+.feedback .feedback_text .form_container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.feedback .feedback_text .form_container form .form_input input {
+  padding: 20px;
+  background-color: #F2F2F2;
+  outline: none;
+  border: none;
+  width: 450px;
+  border-radius: 10px;
+}
+.feedback .feedback_text .form_container form .form_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

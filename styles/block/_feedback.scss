@@ -1,0 +1,39 @@
+.feedback{
+    .feedback_text{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        h2{
+            color: var( --color-text-dark-grey);
+            @include text-fluid(36, 36);
+        }
+
+        .form_container{
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .form_input{
+                    
+                    input{
+                        padding: 20px;
+                        background-color: #F2F2F2;
+                        outline: none;
+                        border: none;
+                        width: 450px;
+                        border-radius: 10px;
+                    }
+
+                }
+                .form_button{
+                    display: flex;
+                    button{
+                        
+                    }
+                }
+            }
+        }
+        
+
+    }
+}
