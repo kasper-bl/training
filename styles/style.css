@@ -385,3 +385,48 @@ header .header_main .header_controls .button {
 .mailing .mailing_text p a {
   color: var(--blue-color);
 }
+
+.accordion {
+  background: radial-gradient(circle at bottom left, #D3B9E5, transparent 35%), radial-gradient(circle at 88% top, #D3B9E5, #D1D0F6, transparent 45%);
+}
+.accordion .accordion_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.accordion .accordion_items h2 {
+  color: var(--color-text-dark-grey);
+  font-size: clamp(36px, 2.5vw, 36px);
+  padding-bottom: 30px;
+}
+.accordion .accordion_items .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 20px;
+  border-radius: 16px;
+  background-color: #fff;
+}
+.accordion .accordion_items .label p {
+  color: var(--color-text-dark-grey);
+  font-size: clamp(36px, 2.5vw, 36px);
+}
+.accordion .accordion_items .content {
+  padding: 16px 20px;
+}
+.accordion .accordion_items .box {
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  -webkit-box-shadow: 0px 2px 5px rgba(48, 50, 57, 0.1294117647);
+          box-shadow: 0px 2px 5px rgba(48, 50, 57, 0.1294117647);
+  padding: 10px 5px;
+}
