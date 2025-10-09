@@ -1,0 +1,47 @@
+.mailing{
+    display: flex;
+    align-items: center;
+    .mailing_text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h2{
+            color: var(--color-text-dark-grey);
+            @include text-fluid(56, 56);
+        }
+        .email_form{
+                position: relative;
+                input{
+                    background: #F2F2F2;
+                    width: 420px;
+                    padding: 18px 20px;
+                    border-radius: 10px;
+                    border: none;
+
+                }
+
+                .submit_button{
+
+                    position: absolute;
+                    right: 240px;
+                    top: 9%;
+                    padding: 10px 20px;
+                    background-color: var(--blue-color) ;
+                    color: var( --color-text-while);
+                    @include text-fluid(17, 17);
+                    border: none;
+                    border-radius: 15px;
+                }
+            }
+            p{
+
+                color: #595959;
+                @include text-fluid(12, 12);
+                
+                a{
+                    color: var(--blue-color);
+                }
+            }
+    }
+}

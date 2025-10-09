@@ -334,3 +334,54 @@ header .header_main .header_controls .button {
   border-radius: 15px;
   color: var(--blue-color);
 }
+
+.mailing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mailing .mailing_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.mailing .mailing_text h2 {
+  color: var(--color-text-dark-grey);
+  font-size: clamp(56px, 3.8888888889vw, 56px);
+}
+.mailing .mailing_text .email_form {
+  position: relative;
+}
+.mailing .mailing_text .email_form input {
+  background: #F2F2F2;
+  width: 420px;
+  padding: 18px 20px;
+  border-radius: 10px;
+  border: none;
+}
+.mailing .mailing_text .email_form .submit_button {
+  position: absolute;
+  right: 240px;
+  top: 9%;
+  padding: 10px 20px;
+  background-color: var(--blue-color);
+  color: var(--color-text-while);
+  font-size: clamp(17px, 1.1805555556vw, 17px);
+  border: none;
+  border-radius: 15px;
+}
+.mailing .mailing_text p {
+  color: #595959;
+  font-size: clamp(12px, 0.8333333333vw, 12px);
+}
+.mailing .mailing_text p a {
+  color: var(--blue-color);
+}
