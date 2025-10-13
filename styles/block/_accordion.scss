@@ -15,7 +15,7 @@
         .label{
             p{
                 color: var( --color-text-dark-grey);
-                @include text-fluid(36, 36);
+                @include text-fluid(18, 36);
                 font-weight: 600;
             }
             display: flex;
@@ -28,6 +28,7 @@
         .content{
             padding: 16px 20px;
             color: var(--color-text-gray);
+            @include text-fluid(14, 18);
             line-height: 25px;
         }
         .box {

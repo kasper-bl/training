@@ -13,10 +13,11 @@
             flex-direction: column;
             gap: 16px;
             h1{
-                @include text-fluid(56,56);
+                @include text-fluid(36,56);
                 color: var(--color-text-dark-grey);
                 padding-bottom: 25px;
             }
+            
             .email_form{
                 position: relative;
                 input{

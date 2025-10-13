@@ -1,11 +1,17 @@
-@media(max-width: 768px){
+@media(max-width: 375px){
+
+    .container{
+    background-color: var(--color-body-backgroung);
+    padding: 10px;
+    }
+
+    .padding{
+    padding: 14px 20px;
+    }
+
     header {
         .header_main {
-
-            img{
-                display: inline;
-                cursor: pointer;
-            }
+            
             .header_logo_menu{
                 display: flex;
                 gap: 10px;
@@ -29,18 +35,22 @@
 // main
 
     .main_banner{
-        height: auto;
-        background: radial-gradient( circle at left 75%,#D3B9E5, #D1D0F6, transparent 55% );
+       
         .main_banner_container{
-            flex-direction: column;
-            align-items: flex-start;
-
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
             .main_banner_text{
-                .mouse{
-                    display: none;
-
+                .email_form{
+                    input{
+                        width: 100%;
+                    }
+                    button{
+                        left: 190px;
+                    }
                 }
-
             }
         }
     }
@@ -48,6 +58,9 @@
 
 // advantages
     .advantages{
+        h2{
+            font-size: 20px ;
+        }
         .advantages_items{
             display: grid;
             grid-template-columns: 1fr; 
@@ -55,6 +68,9 @@
 
             .advantages_items_card{
                 max-width: 100%;
+                p{
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -75,6 +91,15 @@
             flex-direction: column;
             gap: 20px;
 
+            .how_we_work_img{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+                
+            }
+
             .how_we_work_content_text{
                 gap: 30px;
                 width: auto;
@@ -89,7 +114,12 @@
     .tariff{
         .variant_tariff{
 
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
+            gap: 30px;
+
+            .tariff_card{
+                width: 100%;
+            }
 
         }
     }
@@ -98,13 +128,13 @@
 
     .reviews{
         .reviews_item{
-            padding-top: 30px;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+
             .reviews_card{
-                position: static;
+
+                width: 100%;
+                p{
+                    font-size: 14px;
+                }
             }
 
         }
@@ -118,19 +148,33 @@
     //mailing
 
     .mailing{
+        display: flex;
         flex-direction: column;
-        gap: 30px;
+        align-items: center;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
         .mailing_text{
-            gap: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h2{
+                @include text-fluid(18, 36);
+            }
             .email_form{
-                    .submit_button{
-                        right: 200px;
-                        top: 9%;
-                    }
+                input{
+                    width: 100%;
                 }
+                .submit_button{
+                    right: 24px;
+                }
+            }
         }
     }
-
 
     //feedback
     .feedback{
@@ -145,8 +189,17 @@
                     .form_input{
                         
                         input{
-                            width: 600px;
+                            width: 100%;
                         }
+                    }
+                }
+                .form_button{
+                    flex-direction: column;
+                    button{
+                        width: 100%;
+                    }
+                    p{
+                        width: 90%;
                     }
                 }
             }
