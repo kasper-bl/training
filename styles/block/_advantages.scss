@@ -1,0 +1,26 @@
+.advantages{
+    h2{
+        padding: 50px 0;
+        color: var( --color-text-dark-grey);
+        @include text-fluid(18, 36);
+    }
+    .advantages_items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+
+        .advantages_items_card{
+            max-width: 300px;
+            .img_emoji{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding-bottom: 25px;
+                h4{
+                    @include text-fluid(18, 20);
+                    color: var( --color-text-dark-grey);
+                }
+            }
+        }
+    }
+}

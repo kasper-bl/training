@@ -1,0 +1,27 @@
+footer{
+    border-radius: 0 0 15px 15px;
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-text-while);
+    align-items: center;
+    .footer_text{
+        h2{
+            @include text-fluid(14,18);
+        }
+        p{
+            color: var(--color-text-while);
+            @include text-fluid(14,18);
+        }
+    }
+
+    .Return_to_top{
+        cursor: pointer;
+        display: flex;
+        gap: 10px;
+        p{
+            color: var(--color-text-while);
+        }
+        
+    }
+}
