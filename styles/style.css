@@ -1,10 +1,29 @@
+@font-face {
+  font-family: Visuelt Pro;
+  src: url('/assets/fonts/VisueltPro-Regular.woff2');
+}
+
 body {
   background-color: var(--color-body-backgroung);
   font-size: 18px;
+  font-family: Visuelt Pro;
 }
 
 a {
   text-decoration: none;
+}
+
+button{
+  border: none;
+
+}
+
+.button{
+  color: var(--color-text-while);
+  padding: 10px 12px;
+  background-color: var(--blue-color);
+  border-radius: 15px;
+  font-weight: 500;
 }
 
 .wrapper {
@@ -105,13 +124,6 @@ header .header_main .header_controls .language p:first-child {
 }
 header .header_main .header_controls .language p {
   color: var(--color-text-gray);
-}
-header .header_main .header_controls .button {
-  color: var(--color-text-while);
-  padding: 10px 12px;
-  background-color: var(--blue-color);
-  border-radius: 15px;
-  font-weight: 500;
 }
 
 .main_banner {
@@ -282,13 +294,8 @@ header .header_main .header_controls .button {
   padding-top: 12vw;
 }
 .how_we_work .how_we_work_content .how_we_work_item .how_we_work_content_text .how_we_work_btn .button {
-  color: var(--color-text-while);
-  padding: 14px 13px;
-  background-color: var(--blue-color);
-  border-radius: 15px;
-  font-weight: 500;
   width: 200px;
-  text-align: center;
+
 }
 
 .tariff h2 {
