@@ -1,7 +1,7 @@
 .accordion{
     background: 
-    radial-gradient(circle at bottom left, #D3B9E5, transparent 35%),
-    radial-gradient(  circle at 88% top, 
+    radial-gradient(circle at top, #D3B9E5, transparent 35%),
+    radial-gradient(  circle at 88% bottom left, 
     #D3B9E5, #D1D0F6, transparent 45%);
     .accordion_items{
         display: flex;
@@ -13,19 +13,22 @@
         padding-bottom: 30px;
         }
         .label{
-
             p{
                 color: var( --color-text-dark-grey);
                 @include text-fluid(36, 36);
+                font-weight: 600;
             }
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 16px 20px;
             border-radius: 16px;
             background-color: #fff ;
         }
         .content{
             padding: 16px 20px;
+            color: var(--color-text-gray);
+            line-height: 25px;
         }
         .box {
             border-radius: 15px;

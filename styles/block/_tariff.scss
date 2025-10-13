@@ -11,6 +11,7 @@
 
         .tariff_card{
             width: 250px;
+            padding-bottom: 20px;
 
             .price{
                 padding-bottom: 30px;
@@ -30,6 +31,7 @@
             .card_info{
                 
                 .card_text{
+                    background-color: #F8F8F8;
                     display: flex;
                     align-items: center;
                     gap: 10px;
@@ -37,9 +39,11 @@
                 }
 
                 a{
-                    padding: 14px 56px;
+                    padding: 14px 40px;
                     border-radius: 15px;
                     color: var(--blue-color);
+                    text-align: center;
+                    background-color: #fff;
 
                 }
             }

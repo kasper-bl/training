@@ -1,18 +1,27 @@
 .feedback{
-    .feedback_text{
+    .feedback_container{
         display: flex;
         align-items: center;
-        gap: 10px;
-        h2{
-            color: var( --color-text-dark-grey);
-            @include text-fluid(36, 36);
-        }
+        gap: 10vw;
 
-        .form_container{
+        .form_text{
+            max-width: 450px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h2{
+                color: var( --color-text-dark-grey);
+                @include text-fluid(36, 36);
+            }
+
+            p{
+
+            }
             form{
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 15px;
                 .form_input{
                     
                     input{
@@ -27,6 +36,16 @@
                 }
                 .form_button{
                     display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    p{
+                        line-height: 12px;
+                        @include text-fluid(12, 12);
+
+                        a{
+                            color: var(--blue-color)
+                        }
+                    }
                 }
             }
         }

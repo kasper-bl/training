@@ -1,6 +1,12 @@
+@font-face {
+  font-family:Visuelt Pro;
+  src: url('/assets/fonts/VisueltPro-Regular.woff2');
+}
+
 body {
   background-color: var(--color-body-backgroung);
   font-size: 18px;
+  font-family: Visuelt Pro;
 }
 
 a{
@@ -23,4 +29,16 @@ a{
 
 p{
   color: var(--color-text-gray);
+  line-height: 25px;
+}
+
+.button{
+  color: var(--color-text-while);
+  padding: 12px 20px;
+  background-color: var(--blue-color);
+  border-radius: 15px;
+}
+
+button{
+  border: none;
 }
