@@ -1,82 +1,51 @@
 @media(max-width: 768px){
-        nav{
-            display: none;
-        } 
+    header {
+        .header_main {
+            .header_nav{
+                nav{
+                    display: none;
+                } 
+            }
 
-        .language {
-            display: none;
-           
-        
-        }
-}
-        
-
-
+            .header_controls{
+   
+                .language {
+                    display: none;
+                }
+            }
+        }     
+    }
 
 // main
 
-.main_banner{
-    height: 720px;
-    background: radial-gradient(
-    circle at bottom left,#D3B9E5, #D1D0F6, transparent 35% );
-
-    .main_banner_container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .main_banner_text{
-            display: flex;
+    .main_banner{
+        height: auto;
+        background: radial-gradient( circle at left 75%,#D3B9E5, #D1D0F6, transparent 55% );
+        .main_banner_container{
             flex-direction: column;
-            gap: 16px;
-            h1{
-                @include text-fluid(56,56);
-                color: var(--color-text-dark-grey);
-                padding-bottom: 25px;
-            }
-            .email_form{
-                position: relative;
-                input{
-                    background: linear-gradient(90deg,rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 1) 0%);
-                    width: 420px;
-                    padding: 15px 16px;
-                    border-radius: 10px;
-                    border: none;
+            align-items: flex-start;
+
+            .main_banner_text{
+                .mouse{
+                    display: none;
 
                 }
 
-                .submit_button{
-                    position: absolute;
-                    right: 240px;
-                    top: 7%;
-                    padding: 10px 20px;
-                    background-color: #fff ;
-                    color: var(--blue-color);
-                    font-weight: 600;
-                    @include text-fluid(17, 17);
-                    border: none;
-                    border-radius: 5px;
-                }
-            }
-            p{
-                color: #595959;
-                @include text-fluid(12, 12);
-                
-                a{
-                    color: var(--blue-color);
-                }
-            }
-            .mouse{
-                padding-top: 30%;
-                display: flex;
-                align-items: center;
-                gap: 5px;
-
-                p{
-                    color: var(--color-text-while);
-                }
             }
         }
     }
-}
+
+
+// advantages
+    .advantages{
+        .advantages_items{
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 20px;
+
+            .advantages_items_card{
+                max-width: 100%;
+            }
+        }
+    }
 }
