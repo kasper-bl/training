@@ -587,6 +587,10 @@ footer .Return_to_top p {
           align-items: center;
   gap: 15px;
 }
+.reviews .reviews_item .reviews_card .header_card .user h3 {
+  font-weight: 600;
+  color: var(--color-text-dark-grey);
+}
 .reviews .reviews_item .reviews_card .reviews_card_content {
   background-color: #F9F9F9;
   height: calc(100% - 80px);
