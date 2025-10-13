@@ -1,7 +1,7 @@
 .reviews{
     background: 
     radial-gradient(circle at bottom right,  #D0C3EE, transparent 35%),
-    radial-gradient(  circle at 88% top, #D3B9E5, transparent 35%);
+    radial-gradient(  circle at 88% top, #d3b9e5, transparent 35%);
     .reviews_item{
         position: relative;
         height: 800px;
@@ -79,6 +79,7 @@
         text-align: center;
         margin-bottom: 50px;
         font-weight: 600;
+        cursor: pointer;
     }
 }
 

@@ -26,7 +26,7 @@
                 width: 520px;
 
                 h3{
-                    @include text-fluid(30,30);
+                    @include text-fluid(26,30);
                 color: var(--color-text-dark-grey);
                 }
 
@@ -36,6 +36,7 @@
                 .scroll{
                     display: flex;
                     gap: 30px;
+                    cursor: pointer;
 
                     p{
                         @include text-fluid(18,18);

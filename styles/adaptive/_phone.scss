@@ -24,7 +24,13 @@
             }
 
             .header_controls{
-   
+                img{
+                    display: inline;
+                    cursor: pointer;
+                }
+                a{
+                    display: none;
+                }
                 .language {
                     display: none;
                 }
@@ -203,6 +209,27 @@
                     }
                 }
             }
+        }
+    }
+
+    footer{
+        .footer_text{
+            h2{
+                @include text-fluid(12,18);
+                font-weight: 200;
+            }
+            p{
+                @include text-fluid(10,18);
+            }
+        }
+
+        .Return_to_top{
+            display: flex;
+            gap: 2px;
+            p{
+                @include text-fluid(10,18);
+            }
+            
         }
     }
 }

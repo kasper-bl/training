@@ -6,9 +6,12 @@ footer{
     color: var(--color-text-while);
     align-items: center;
     .footer_text{
+        h2{
+            @include text-fluid(14,18);
+        }
         p{
             color: var(--color-text-while);
-            @include text-fluid(12,12);
+            @include text-fluid(14,18);
         }
     }
 

@@ -15,6 +15,7 @@ header {
             color: var(--blue-color);
             @include text-fluid(18, 18); 
             font-weight: 500;
+            cursor: pointer;
         }
 
         .header_nav{
@@ -37,6 +38,10 @@ header {
             display: flex;
             align-items: center;
             gap: 10px;
+
+            img{
+                display: none;
+            }
         
             .language {
                 display: flex;
