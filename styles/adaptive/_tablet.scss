@@ -1,6 +1,16 @@
 @media(max-width: 768px){
     header {
         .header_main {
+
+            img{
+                display: inline;
+                cursor: pointer;
+            }
+            .header_logo_menu{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
             .header_nav{
                 nav{
                     display: none;
@@ -70,6 +80,75 @@
                 width: auto;
                 }
 
+            }
+        }
+    }
+
+    //tariff
+
+    .tariff{
+        .variant_tariff{
+
+            grid-template-columns: 1fr 1fr;
+
+        }
+    }
+
+    // reviews
+
+    .reviews{
+        .reviews_item{
+            padding-top: 30px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .reviews_card{
+                position: static;
+            }
+
+        }
+
+
+        .reviews_button{
+            margin-top: 30px;
+        }
+    }
+
+    //mailing
+
+    .mailing{
+        flex-direction: column;
+        gap: 30px;
+        .mailing_text{
+            gap: 30px;
+            .email_form{
+                    .submit_button{
+                        right: 200px;
+                        top: 9%;
+                    }
+                }
+        }
+    }
+
+
+    //feedback
+    .feedback{
+        .feedback_container{
+
+            img{
+                display: none;
+            }
+
+            .form_text{
+                form{
+                    .form_input{
+                        
+                        input{
+                            width: 600px;
+                        }
+                    }
+                }
             }
         }
     }
