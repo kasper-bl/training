@@ -1,4 +1,7 @@
 .reviews{
+    background: 
+    radial-gradient(circle at bottom right,  #D0C3EE, transparent 35%),
+    radial-gradient(  circle at 88% top, #D3B9E5, transparent 35%);
     .reviews_item{
         position: relative;
         height: 800px;
@@ -67,13 +70,15 @@
     }
 
     .reviews_button{
-        color: var(--color-text-while);
+        color: var(--blue-color);
         padding: 12px 20px;
-        background-color: var(--blue-color);
+        background-color: var(--color-text-while);
         border-radius: 15px;
         width: 300px;
         margin-left: auto;
         text-align: center;
+        margin-bottom: 50px;
+        font-weight: 600;
     }
 }
 

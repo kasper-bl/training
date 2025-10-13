@@ -13,7 +13,7 @@ a {
 }
 
 .wrapper {
-  background-color: var(--wraapper-color);
+  background-color: var(--wrapper-color);
   border-radius: 15px;
 }
 
@@ -57,7 +57,7 @@ a {
 :root {
   --color-body-backgroung:#F2F2F2;
   --blue-color: #4754EB;
-  --wraapper-color: #FFFFFF;
+  --wrapper-color: #FFFFFF;
   --color-text-gray: #808080;
   --color-text-while: #fff;
   --color-text-dark-grey:#1A1A1A;
@@ -502,6 +502,7 @@ header .header_main .header_controls .language p {
 }
 
 footer {
+  border-radius: 0 0 15px 15px;
   background-color: var(--blue-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -529,6 +530,9 @@ footer .Return_to_top p {
   color: var(--color-text-while);
 }
 
+.reviews {
+  background: radial-gradient(circle at bottom right, #D0C3EE, transparent 35%), radial-gradient(circle at 88% top, #D3B9E5, transparent 35%);
+}
 .reviews .reviews_item {
   position: relative;
   height: 800px;
@@ -595,11 +599,13 @@ footer .Return_to_top p {
   z-index: 2;
 }
 .reviews .reviews_button {
-  color: var(--color-text-while);
+  color: var(--blue-color);
   padding: 12px 20px;
-  background-color: var(--blue-color);
+  background-color: var(--color-text-while);
   border-radius: 15px;
   width: 300px;
   margin-left: auto;
   text-align: center;
+  margin-bottom: 50px;
+  font-weight: 600;
 }
