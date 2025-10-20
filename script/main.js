@@ -14,8 +14,23 @@ btnAttach.addEventListener('click', (e) => {
     const fileExtension =  fileName.split('.').pop();
     if (fileExtension === 'js' || fileExtension === 'json') {
         const read = new FileReader();
-        read.onload = function () { 
+        read.onload = function (event) { 
             console.log("Файл прочитан")
+            const content = event.target.result;
+
+            try {
+                const jsonContent = JSON.parse(content);
+                console.log(jsonContent);
+                const title = document.createElement('h2');
+                title.textContent = "Файл работает у тебя";
+                parseForm.appendChild(title);
+                
+            }
+            catch (e) { 
+                alert(" Непонятный json");
+            }
+            
+            
         }
         read.readAsText(file);
     } else { 
