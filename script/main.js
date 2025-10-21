@@ -22,14 +22,14 @@ btnAttach.addEventListener('click', (e) => {
             try {
                 const jsonContent = JSON.parse(content);
 
-                if (jsonContent.fields) { 
+                if (jsonContent.name) { 
                     const name = document.createElement('h2');
                     name.textContent = jsonContent.name;
                     parseForm.appendChild(name);
                 }
 
                 if (jsonContent.fields) { 
-                    jsonContent.fields.forEach((element, index) => {
+                    jsonContent.fields.forEach(element => {
 
                         const inputPars = document.createElement('input');
                         const parseLabel = document.createElement('label');
