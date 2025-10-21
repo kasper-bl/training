@@ -21,50 +21,69 @@ btnAttach.addEventListener('click', (e) => {
 
             try {
                 const jsonContent = JSON.parse(content);
-                console.log(jsonContent);
 
-                jsonContent.fields.forEach(element => { 
-                    const parseLabel = document.createElement('label');
+                if (jsonContent.fields) { 
+                    const name = document.createElement('h2');
+                    name.textContent = jsonContent.name;
+                    parseForm.appendChild(name);
+                }
 
-                    Object.keys(element.label).forEach(key => { 
+                if (jsonContent.fields) { 
+                    jsonContent.fields.forEach((element, index) => {
+
+                        const inputPars = document.createElement('input');
+                        const parseLabel = document.createElement('label');
+                        
                         parseLabel.textContent = element.label;
-                    })
+                            
 
-                    parseForm.appendChild(parseLabel);
-                })
+                        Object.keys(element.input).forEach(key => { 
+                            inputPars.setAttribute(key, element.input[key]);
+
+                            if (inputPars.type === "color") { 
+                                console.log('Ну тут типо текст');
+                                const datalist = document.createElement('datalist');
+                                const datalistId = "color";
+
+                                datalist.id = datalistId;
+
+                                const color = element.input.colors;
+
+                                if (element.input.colors) { 
+                                    color.forEach(color => { 
+                                        const option = document.createElement('option');
+                                        option.value = color;
+                                        datalist.appendChild(option);
+                                    })
+                                }
+                                
+                                parseForm.appendChild(datalist);
+                                inputPars.setAttribute('list', datalistId);
+                                
+                            }
+                        })
+
+                        parseForm.appendChild(parseLabel);
+                        parseForm.appendChild(inputPars);
+                    });
+                }
                 
-                jsonContent.fields.forEach(element => {
-                    
-                    // добавление input
-                    const inputPars = document.createElement('input');
+                if (jsonContent.buttons) { 
+                    jsonContent.buttons.forEach(element => {
+                        const parseBtn = document.createElement('button');
+                        parseBtn.textContent = element.text; 
+                        parseForm.appendChild(parseBtn);
+                    });
+                }
 
-                    Object.keys(element.input).forEach(key => { 
-                        inputPars.setAttribute(key, element.input[key]);
+                if (jsonContent.references) { 
+                    jsonContent.references.forEach(element => { 
+                        const parseReferences = document.createElement('a');
+                        parseReferences.textContent = element.text;
+                        parseReferences.setAttribute('href', element.ref);
+                        parseForm.appendChild(parseReferences);
                     })
-                    parseForm.appendChild(inputPars);
-                });
-
-                jsonContent.buttons.forEach(element => { 
-
-                    // добавление кнопок
-
-                    const parseBtn = document.createElement('button');
-
-                    Object.keys(element.text).forEach(key => { 
-                        parseBtn.textContent = element.text;
-                    })
-
-                    parseForm.appendChild(parseBtn);
-                })
-
-                jsonContent.references.forEach(element => { 
-                    const parseReferences = document.createElement('a');
-                    parseReferences.textContent = element.text;
-                    parseReferences.setAttribute('href', element.ref);
-                    parseForm.appendChild(parseReferences);
-                })
-
-
+                }
             }
             catch (e) { 
                 alert(" Непонятный json");
