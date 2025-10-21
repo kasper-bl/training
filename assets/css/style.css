@@ -128,3 +128,12 @@ input[type="color"]{
 input[type="checkbox"]{
     max-width: 20px;
 }
+
+@media(max-width: 500px){
+    body{
+        font-size: 0.9rem;
+    }
+    .parse-form_button{
+        flex-direction: column;
+    }
+}
