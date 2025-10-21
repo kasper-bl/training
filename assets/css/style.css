@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Crooker";
+    src: url('/assets/fonts/crooker.otf');
+}
+:root{
+    --container-color:#ffffff; 
+    --h2-color:#bd2457;
+}
+
+body{
+    background: linear-gradient(190deg,rgba(254, 201, 195, 1) 0%, rgba(250, 242, 221, 1) 100%);
+    font-family: Crooker, sans-serif;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 99vh;
+    border-radius: 10px;
+}
+
+.parse-form{
+    background-color: var(--container-color);
+    border: 2px solid #e981a4;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.parse-form__title{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.parse-form__title h2{
+    color: var(--h2-color) ;
+    text-align: center;
+}
+
+.parse-form__input{
+    width: 100%;
+    padding: 2% 3%;
+    border: 2px solid #e981a4;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.parse-form_button{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.parse-form_button button, .delete{
+    padding: 2% 3%;
+    border-radius: 20px;
+    border: 2px solid #e981a4;
+    background-color: #ffffff;
+    font-family: Crooker;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease; 
+}
+
+.parse-form_button button:hover, .delete:hover{
+    background-color: #e981a4;
+    color: #ffffff;
+}
