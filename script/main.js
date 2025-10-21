@@ -2,6 +2,7 @@ const fileInput = document.querySelector(".parse-form__input");
 const btnAttach = document.querySelector(".parse-form__button-attach");
 const btnThrow = document.querySelector(".parse-form__button-throw");
 const parseForm = document.querySelector(".parse-form__final");
+const btnDelete = document.querySelector(".delete");
 
 
 btnAttach.addEventListener('click', (e) => { 
@@ -21,10 +22,32 @@ btnAttach.addEventListener('click', (e) => {
             try {
                 const jsonContent = JSON.parse(content);
                 console.log(jsonContent);
-                const title = document.createElement('h2');
-                title.textContent = "Файл работает у тебя";
-                parseForm.appendChild(title);
                 
+                jsonContent.fields.forEach(element => {
+                    
+                    // добавление input 
+                    const inputPars = document.createElement('input');
+
+                    Object.keys(element.input).forEach(key => { 
+                        inputPars.setAttribute(key, element.input[key]);
+                    })
+                    parseForm.appendChild(inputPars);
+                });
+
+                jsonContent.buttons.forEach(element => { 
+
+                    // добавление кнопок
+
+                    const parseBtn = document.createElement('button');
+
+                    Object.keys(element.text).forEach(key => { 
+                        parseBtn.textContent = element.text;
+                    })
+
+                    parseForm.appendChild(parseBtn);
+                })
+
+
             }
             catch (e) { 
                 alert(" Непонятный json");
@@ -40,4 +63,8 @@ btnAttach.addEventListener('click', (e) => {
 
 btnThrow.addEventListener('click', (e) => { 
     fileInput.value = "";
+})
+
+btnDelete.addEventListener('click', (e) => { 
+    parseForm.remove();
 })
