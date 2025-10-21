@@ -22,10 +22,20 @@ btnAttach.addEventListener('click', (e) => {
             try {
                 const jsonContent = JSON.parse(content);
                 console.log(jsonContent);
+
+                jsonContent.fields.forEach(element => { 
+                    const parseLabel = document.createElement('label');
+
+                    Object.keys(element.label).forEach(key => { 
+                        parseLabel.textContent = element.label;
+                    })
+
+                    parseForm.appendChild(parseLabel);
+                })
                 
                 jsonContent.fields.forEach(element => {
                     
-                    // добавление input 
+                    // добавление input
                     const inputPars = document.createElement('input');
 
                     Object.keys(element.input).forEach(key => { 
@@ -45,6 +55,13 @@ btnAttach.addEventListener('click', (e) => {
                     })
 
                     parseForm.appendChild(parseBtn);
+                })
+
+                jsonContent.references.forEach(element => { 
+                    const parseReferences = document.createElement('a');
+                    parseReferences.textContent = element.text;
+                    parseReferences.setAttribute('href', element.ref);
+                    parseForm.appendChild(parseReferences);
                 })
 
 
