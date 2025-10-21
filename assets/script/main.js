@@ -1,8 +1,11 @@
 const fileInput = document.querySelector(".parse-form__input");
 const btnAttach = document.querySelector(".parse-form__button-attach");
 const btnThrow = document.querySelector(".parse-form__button-throw");
-const parseForm = document.querySelector(".parse-form__final");
 const btnDelete = document.querySelector(".delete");
+const form = document.querySelector(".parse-form");
+
+const parseForm = document.createElement('div');
+parseForm.setAttribute('class', 'parse-form__final');
 
 
 btnAttach.addEventListener('click', (e) => { 
@@ -18,9 +21,11 @@ btnAttach.addEventListener('click', (e) => {
         read.onload = function (event) { 
             console.log("Файл прочитан")
             const content = event.target.result;
+            
 
             try {
                 const jsonContent = JSON.parse(content);
+                form.appendChild(parseForm);
 
                 if (jsonContent.name) { 
                     const name = document.createElement('h2');
@@ -103,4 +108,5 @@ btnThrow.addEventListener('click', (e) => {
 
 btnDelete.addEventListener('click', (e) => { 
     parseForm.remove();
+    parseForm.innerHTML = '';
 })
