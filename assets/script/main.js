@@ -19,7 +19,6 @@ btnAttach.addEventListener('click', (e) => {
     if (fileExtension === 'js' || fileExtension === 'json') {
         const read = new FileReader();
         read.onload = function (event) { 
-            console.log("Файл прочитан")
             const content = event.target.result;
             
 
@@ -46,7 +45,6 @@ btnAttach.addEventListener('click', (e) => {
                             inputPars.setAttribute(key, element.input[key]);
 
                             if (inputPars.type === "color") { 
-                                console.log('Ну тут типо текст');
                                 const datalist = document.createElement('datalist');
                                 const datalistId = "color";
 
