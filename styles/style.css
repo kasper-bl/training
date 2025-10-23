@@ -37,7 +37,7 @@ p {
   padding: 12px 2vw;
   background-color: var(--blue-color);
   font-size: 1rem;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -336,7 +336,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 4%;
 }
 .how-we-work__text {
   display: -webkit-box;
@@ -457,8 +457,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
 }
-.mailing .mailing_text {
+.mailing img {
+  width: 70%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.mailing__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,39 +474,41 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  width: 35%;
 }
-.mailing .mailing_text h2 {
+.mailing__text h2 {
   color: var(--color-text-dark-grey);
-  font-size: clamp(36px, 3.8888888889vw, 56px);
+  font-size: 3rem;
 }
-.mailing .mailing_text .email_form {
+.mailing__form {
   position: relative;
 }
-.mailing .mailing_text .email_form input {
+.mailing__form .mailing__input {
   background: #F2F2F2;
-  width: 420px;
+  width: 100%;
   padding: 18px 20px;
+  width: 90%;
   border-radius: 10px;
   border: none;
 }
-.mailing .mailing_text .email_form .submit_button {
+.mailing__form .mailing__button {
   position: absolute;
-  right: 240px;
-  top: 9%;
+  right: 10%;
+  top: 10%;
   padding: 10px 20px;
   background-color: var(--blue-color);
   color: var(--color-text-while);
-  font-size: clamp(17px, 1.1805555556vw, 17px);
+  font-size: 1rem;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
 }
-.mailing .mailing_text p {
+.mailing__text p {
   line-height: 12px;
   color: #595959;
-  font-size: clamp(12px, 0.8333333333vw, 12px);
+  font-size: 0.6rem;
 }
-.mailing .mailing_text p a {
+.mailing__text p a {
   color: var(--blue-color);
 }
 

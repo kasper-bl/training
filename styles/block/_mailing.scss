@@ -1,48 +1,59 @@
-.mailing{
+.mailing {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  img{
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__text {
     display: flex;
-    align-items: center;
-    .mailing_text{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+    flex-direction: column;
+    gap: 10px;
+    width: 35%;
 
-        h2{
-            color: var(--color-text-dark-grey);
-            @include text-fluid(36, 56);
-        }
-        .email_form{
-                position: relative;
-                input{
-                    background: #F2F2F2;
-                    width: 420px;
-                    padding: 18px 20px;
-                    border-radius: 10px;
-                    border: none;
-
-                }
-
-                .submit_button{
-
-                    position: absolute;
-                    right: 240px;
-                    top: 9%;
-                    padding: 10px 20px;
-                    background-color: var(--blue-color) ;
-                    color: var( --color-text-while);
-                    @include text-fluid(17, 17);
-                    border: none;
-                    border-radius: 15px;
-                    cursor: pointer;
-                }
-            }
-            p{
-                line-height: 12px;
-                color: #595959;
-                @include text-fluid(12, 12);
-                
-                a{
-                    color: var(--blue-color);
-                }
-            }
+    h2 {
+      color: var(--color-text-dark-grey);
+      font-size: 3rem;
     }
+  }
+
+  &__form {
+    position: relative;
+
+    .mailing__input {
+      background: #F2F2F2;
+      width: 100%;
+      padding: 18px 20px;
+      width: 90%;
+      border-radius: 10px;
+      border: none;
+    }
+
+    .mailing__button {
+      position: absolute;
+      right: 10%; 
+      top: 10%;
+      padding: 10px 20px;
+      background-color: var(--blue-color);
+      color: var(--color-text-while);
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &__text p {
+    line-height: 12px;
+    color: #595959;
+    font-size: 0.6rem;
+
+    a {
+      color: var(--blue-color);
+    }
+  }
 }
