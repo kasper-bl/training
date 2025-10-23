@@ -1,67 +1,82 @@
-.main_banner{
-    height: 720px;
-    background: radial-gradient(
-    circle at bottom left,#D3B9E5, #D1D0F6, transparent 35% );
+.main-banner {
+  background: radial-gradient(circle at bottom left,#d3b9e5,#d1d0f6,transparent 35%);
 
-    .main_banner_container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-        .main_banner_text{
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            h1{
-                @include text-fluid(36,56);
-                color: var(--color-text-dark-grey);
-                padding-bottom: 25px;
-            }
-            
-            .email_form{
-                position: relative;
-                input{
-                    background: linear-gradient(90deg,rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 1) 0%);
-                    width: 420px;
-                    padding: 15px 16px;
-                    border-radius: 10px;
-                    border: none;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
 
-                }
 
-                .submit_button{
-                    position: absolute;
-                    right: 240px;
-                    top: 7%;
-                    padding: 10px 20px;
-                    background-color: #fff ;
-                    color: var(--blue-color);
-                    font-weight: 600;
-                    @include text-fluid(17, 17);
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
-            }
-            p{
-                color: #595959;
-                @include text-fluid(12, 12);
-                
-                a{
-                    color: var(--blue-color);
-                }
-            }
-            .mouse{
-                padding-top: 30%;
-                display: flex;
-                align-items: center;
-                gap: 5px;
-                cursor: pointer;
-
-                p{
-                    color: var(--color-text-while);
-                }
-            }
-        }
+    h1 {
+      color: var(--color-text-dark-grey);
+      padding-bottom: 25px;
+      font-size: 3.1rem;
     }
+
+    .text__container{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+  }
+
+  &__email-form {
+    position: relative;
+    width: 420px; 
+
+    .main-form__email-input {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 1) 0%);
+      width: 100%;
+      padding: 15px 16px;
+      border-radius: 10px;
+      border: none;
+      box-sizing: border-box;
+    }
+
+    .main-form__submit-button {
+      position: absolute;
+      right: 10px; 
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px 20px;
+      background-color: #fff;
+      color: var(--blue-color);
+      font-weight: 600;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  &__text > p {
+    color: #595959;
+
+    a {
+      color: var(--blue-color);
+    }
+  }
+
+  &__mouse {
+    padding-top: 10vw;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+    p {
+      color: var(--color-text-while); 
+    }
+  }
+  &__img img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }

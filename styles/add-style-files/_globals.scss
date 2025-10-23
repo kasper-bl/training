@@ -5,10 +5,12 @@
 
 body {
   background-color: var(--color-body-backgroung);
-  font-size: 18px;
   font-family: "Visuelt Pro";
 }
 
+html{
+  font-size: 18px;
+}
 a{
   text-decoration: none;
   color: var(--color-text-gray);
@@ -33,8 +35,9 @@ p{
 
 .button{
   color: var(--color-text-while);
-  padding: 12px 20px;
+  padding: 12px 2vw;
   background-color: var(--blue-color);
+  font-size: 1rem;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -44,4 +47,9 @@ button{
 }
 .active{
   color: var(--blue-color);
+}
+
+.container{
+  margin: 0 auto;
+  width: 95%;
 }

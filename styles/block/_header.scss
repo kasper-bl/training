@@ -6,8 +6,6 @@
   align-items: center;
 
   &__inner {
-    width: 95%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,11 +60,6 @@
         cursor: pointer;
       }
     }
-
-    a {
-      width: 100%;
-    }
-
     img {
       display: none;
     }
