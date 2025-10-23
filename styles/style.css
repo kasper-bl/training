@@ -54,6 +54,10 @@ button {
   width: 95%;
 }
 
+.blue-text {
+  color: var(--blue-color);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -314,22 +318,27 @@ a {
   color: var(--color-text-dark-grey);
 }
 
-.how_we_work {
+.how-we-work {
   background: radial-gradient(circle at bottom left, #D3B9E5, transparent 35%), radial-gradient(circle at 88% top, #D3B9E5, #D1D0F6, transparent 45%);
-  height: 800px;
 }
-.how_we_work .how_we_work_content h2 {
-  padding: 50px 0 30px 0;
-  font-size: clamp(18px, 2.5vw, 36px);
+.how-we-work__img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.how-we-work__content h2 {
+  padding: 50px 0 30px;
+  font-size: 2rem;
   color: var(--color-text-dark-grey);
 }
-.how_we_work .how_we_work_content .how_we_work_item {
+.how-we-work__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
-.how_we_work .how_we_work_content .how_we_work_item .how_we_work_content_text {
+.how-we-work__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,45 +346,43 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
-  width: 520px;
+  gap: 30px;
+  width: 40%;
 }
-.how_we_work .how_we_work_content .how_we_work_item .how_we_work_content_text h3 {
-  font-size: clamp(26px, 2.0833333333vw, 30px);
+.how-we-work__text h3 {
+  font-size: 2rem;
   color: var(--color-text-dark-grey);
 }
-.how_we_work .how_we_work_content .how_we_work_item .how_we_work_content_text .blue_text {
-  color: var(--blue-color);
-}
-.how_we_work .how_we_work_content .how_we_work_item .how_we_work_content_text .scroll {
+.how-we-work__scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
   cursor: pointer;
 }
-.how_we_work .how_we_work_content .how_we_work_item .how_we_work_content_text .scroll p {
-  font-size: clamp(18px, 1.25vw, 18px);
-}
-.how_we_work .how_we_work_content .how_we_work_item .how_we_work_content_text .scroll p:not(:last-child) {
+.how-we-work__scroll p:not(:last-child) {
   position: relative;
   padding-right: 30px;
 }
-.how_we_work .how_we_work_content .how_we_work_item .how_we_work_content_text .scroll p:not(:last-child)::before {
+.how-we-work__scroll p:not(:last-child)::before {
   content: "";
   position: absolute;
   right: 0;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
   width: 1px;
   height: 20px;
   background: #fff;
   border-radius: 2px;
 }
-.how_we_work .how_we_work_content .how_we_work_item .how_we_work_content_text .scroll p:first-child {
+.how-we-work__scroll p:first-child {
   color: var(--blue-color);
 }
-.how_we_work .how_we_work_content .how_we_work_item .how_we_work_content_text .button {
+.how-we-work__btn {
+  padding-top: 3vw;
+}
+.how-we-work__btn .button {
   width: 200px;
 }
 
