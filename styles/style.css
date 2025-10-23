@@ -389,34 +389,37 @@ a {
 .tariff h2 {
   padding: 50px 0;
   color: var(--color-text-dark-grey);
-  font-size: clamp(18px, 2.5vw, 36px);
+  font-size: 2rem;
 }
-.tariff .variant_tariff {
+.tariff__variant {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+  padding-bottom: 10%;
 }
-.tariff .variant_tariff .tariff_card {
-  width: 250px;
-  padding-bottom: 20px;
+.tariff__card {
+  border-radius: 15px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #F8F8F8;
 }
-.tariff .variant_tariff .tariff_card .price {
-  padding-bottom: 30px;
+.tariff__price {
+  background-color: #fff;
+  padding: 20px;
 }
-.tariff .variant_tariff .tariff_card .price h4 {
+.tariff__price h4 {
   color: var(--color-text-dark-grey);
   font-size: clamp(24px, 1.6666666667vw, 24px);
 }
-.tariff .variant_tariff .tariff_card .price p {
+.tariff__price p {
   font-size: clamp(24px, 1.6666666667vw, 24px);
 }
-.tariff .variant_tariff .tariff_card .price span {
+.tariff__price span {
   color: var(--blue-color);
 }
-.tariff .variant_tariff .tariff_card .card_info .card_text {
-  background-color: #F8F8F8;
+.tariff__feature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,7 +429,20 @@ a {
   gap: 10px;
   padding-bottom: 20px;
 }
-.tariff .variant_tariff .tariff_card .card_info a {
+.tariff__card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tariff__card-info a {
   padding: 14px 40px;
   border-radius: 15px;
   color: var(--blue-color);

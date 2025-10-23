@@ -1,55 +1,63 @@
-.tariff{
-    h2{
-        padding: 50px 0;
-        color: var(--color-text-dark-grey);
-        @include text-fluid(18, 36);
+.tariff {
+    
+  h2 {
+    padding: 50px 0;
+    color: var(--color-text-dark-grey);
+    font-size: 2rem;
+  }
+
+  &__variant {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 10%;
+  }
+
+  &__card {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #F8F8F8;
+
+  }
+
+  &__price {
+    background-color: #fff;
+    padding: 20px;
+    
+
+    h4 {
+      color: var(--color-text-dark-grey);
+      @include text-fluid(24, 24);
     }
-    .variant_tariff{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 20px;
 
-        .tariff_card{
-            width: 250px;
-            padding-bottom: 20px;
+    p {
+      @include text-fluid(24, 24);
+    }
 
-            .price{
-                padding-bottom: 30px;
+    span {
+      color: var(--blue-color);
+    }
+  }
 
-                h4{
-                    color: var(--color-text-dark-grey);
-                    @include text-fluid(24,24);
-                }
+  &__feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
 
-                p{
-                    @include text-fluid(24,24);
-                }
-                span{
-                    color: var(--blue-color);
-                }
-            }
-            .card_info{
-                
-                .card_text{
-                    background-color: #F8F8F8;
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    padding-bottom: 20px;
-                }
-
-                a{
-                    padding: 14px 40px;
-                    border-radius: 15px;
-                    color: var(--blue-color);
-                    text-align: center;
-                    background-color: #fff;
-
-                }
-            }
+  &__card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  
+        a {
+            padding: 14px 40px;
+            border-radius: 15px;
+            color: var(--blue-color);
+            text-align: center;
+            background-color: #fff;
         }
     }
-
-
-
 }
