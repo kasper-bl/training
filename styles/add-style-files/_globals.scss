@@ -6,30 +6,29 @@
 body {
   background-color: var(--color-body-backgroung);
   font-size: 18px;
-  font-family: Visuelt Pro;
+  font-family: "Visuelt Pro";
 }
 
 a{
   text-decoration: none;
+  color: var(--color-text-gray);
 }
-.wrapper{
+.inner{
   background-color: var(--wrapper-color);
   border-radius: 15px;
+  margin: 0 auto;
+  max-width: 1440px;
 
 }
 
-.container{
+.wrapper{
   background-color: var(--color-body-backgroung);
   padding: 20px;
 }
 
-.padding{
-  padding: 28px 56px;
-}
 
 p{
   color: var(--color-text-gray);
-  line-height: 25px;
 }
 
 .button{
@@ -42,4 +41,7 @@ p{
 
 button{
   border: none;
+}
+.active{
+  color: var(--blue-color);
 }

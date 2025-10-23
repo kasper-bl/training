@@ -5,30 +5,28 @@
 body {
   background-color: var(--color-body-backgroung);
   font-size: 18px;
-  font-family: Visuelt Pro;
+  font-family: "Visuelt Pro";
 }
 
 a {
   text-decoration: none;
+  color: var(--color-text-gray);
+}
+
+.inner {
+  background-color: var(--wrapper-color);
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .wrapper {
-  background-color: var(--wrapper-color);
-  border-radius: 15px;
-}
-
-.container {
   background-color: var(--color-body-backgroung);
   padding: 20px;
 }
 
-.padding {
-  padding: 28px 56px;
-}
-
 p {
   color: var(--color-text-gray);
-  line-height: 25px;
 }
 
 .button {
@@ -41,6 +39,10 @@ p {
 
 button {
   border: none;
+}
+
+.active {
+  color: var(--blue-color);
 }
 
 * {
@@ -64,10 +66,20 @@ a {
   --color-text-dark-grey:#1A1A1A;
 }
 
-header {
-  max-height: 80px;
+.header {
+  padding: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-header .header_main {
+.header__inner {
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,58 +90,80 @@ header .header_main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-header .header_main img {
+.header__logo {
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header__logo h1 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.header__logo h1 a {
+  color: var(--blue-color);
+}
+.header__logo img {
   display: none;
 }
-header .header_main .logo {
-  color: var(--blue-color);
-  font-size: clamp(18px, 1.25vw, 18px);
-  font-weight: 500;
+.header__nav {
+  gap: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__menu {
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__controls {
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header__controls .controls__languages {
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__controls .controls__languages p {
   cursor: pointer;
 }
-header .header_main .header_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20vw;
+.header__controls a {
+  width: 100%;
 }
-header .header_main .header_nav nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-header .header_main .header_nav nav a {
-  color: var(--color-text-gray);
-}
-header .header_main .header_controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-}
-header .header_main .header_controls img {
+.header__controls img {
   display: none;
-}
-header .header_main .header_controls .language {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-header .header_main .header_controls .language p:first-child {
-  color: var(--blue-color);
-}
-header .header_main .header_controls .language p {
-  color: var(--color-text-gray);
 }
 
 .main_banner {

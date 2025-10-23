@@ -1,60 +1,74 @@
-header {
-    max-height: 80px;
+.header {
+  padding: 16px 0;
 
-    .header_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  &__inner {
+    width: 95%;
 
-        img{
-            display: none;
-        }
-    
-        .logo {
-            color: var(--blue-color);
-            @include text-fluid(18, 18); 
-            font-weight: 500;
-            cursor: pointer;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-        .header_nav{
-            display: flex;
-            align-items: center;
-            gap: 20vw;
+  &__logo {
+    column-gap: 15px;
 
-            nav{
-                display: flex;
-                gap: 30px;
-                
-                a{
-                    color: var(--color-text-gray);
-                }
-            } 
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        .header_controls{
+    h1 {
+      font-weight: 500;
+      font-size: 1rem;
 
-            display: flex;
-            align-items: center;
-            gap: 10px;
+      a {
+        color: var(--blue-color);
+      }
+    }
 
-            img{
-                display: none;
-            }
-        
-            .language {
-                display: flex;
-                align-items: center;
+    img {
+      display: none;
+    }
+  }
 
-                p:first-child{
-                    color: var(--blue-color);
-                }
+  &__nav {
+    gap: 60px;
 
-                p{
-                    color: var(--color-text-gray);
-                }
-            }
-        }
-    }     
+    display: flex;
+  }
+
+  &__menu {
+    column-gap: 15px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__controls {
+    column-gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .controls__languages {
+      column-gap: 5px;
+      display: flex;
+      align-items: center;
+
+      p{
+        cursor: pointer;
+      }
+    }
+
+    a {
+      width: 100%;
+    }
+
+    img {
+      display: none;
+    }
+  }
 }
