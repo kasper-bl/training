@@ -567,7 +567,7 @@ a {
   background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.185) 30%);
 }
 
-.feedback .feedback_container {
+.feedback__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,7 +576,7 @@ a {
           align-items: center;
   gap: 10vw;
 }
-.feedback .feedback_container .form_text {
+.feedback__form-text {
   max-width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,11 +587,11 @@ a {
           flex-direction: column;
   gap: 20px;
 }
-.feedback .feedback_container .form_text h2 {
+.feedback__form-text h2 {
   color: var(--color-text-dark-grey);
-  font-size: clamp(26px, 2.5vw, 36px);
+  font-size: 2rem;
 }
-.feedback .feedback_container .form_text form {
+.feedback form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,15 +601,15 @@ a {
           flex-direction: column;
   gap: 15px;
 }
-.feedback .feedback_container .form_text form .form_input input {
+.feedback__form-input input {
   padding: 20px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   outline: none;
   border: none;
   width: 450px;
   border-radius: 10px;
 }
-.feedback .feedback_container .form_text form .form_button {
+.feedback__form-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,11 +618,10 @@ a {
           align-items: center;
   gap: 20px;
 }
-.feedback .feedback_container .form_text form .form_button p {
-  line-height: 12px;
-  font-size: clamp(12px, 0.8333333333vw, 12px);
+.feedback__form-button p {
+  font-size: 0.6rem;
 }
-.feedback .feedback_container .form_text form .form_button p a {
+.feedback__form-button p a {
   color: var(--blue-color);
 }
 
