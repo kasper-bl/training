@@ -2,7 +2,13 @@
   &__inner {
     display: flex;
     align-items: center;
-    gap: 10vw;
+    gap: 5vw;
+  }
+
+  img{
+    width: 40%;
+    height: auto;
+    object-fit: contain;
   }
 
   &__form-text {
