@@ -328,6 +328,10 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
 }
+.advantages__items-card:hover {
+  -webkit-box-shadow: -5px 14px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: -5px 14px 20px rgba(0, 0, 0, 0.15);
+}
 .advantages__items-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,6 +340,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
   gap: 25px;
 }
 .advantages__items-card .img_emoji {
@@ -471,7 +477,13 @@ a {
   border-radius: 15px;
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  -webkit-transform: 2s easy;
+          transform: 2s easy;
   background-color: #F8F8F8;
+}
+.tariff__card:hover {
+  -webkit-box-shadow: -5px 14px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: -5px 14px 20px rgba(0, 0, 0, 0.15);
 }
 .tariff__price {
   background-color: #fff;

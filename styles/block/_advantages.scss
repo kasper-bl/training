@@ -15,10 +15,17 @@
     
   }
 
+  &__items-card:hover{
+    box-shadow: -5px 14px 20px rgba(0, 0, 0, 0.15);
+  }
+
   &__items-card {
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
     gap: 25px;
+    
 
     .img_emoji {
       display: flex;

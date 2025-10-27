@@ -16,8 +16,13 @@
   &__card {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: 2s easy;
     background-color: #F8F8F8;
 
+  }
+
+  &__card:hover{
+     box-shadow: -5px 14px 20px rgba(0, 0, 0, 0.15);
   }
 
   &__price {
