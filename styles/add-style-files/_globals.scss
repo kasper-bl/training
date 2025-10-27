@@ -39,12 +39,25 @@ p{
   background-color: var(--blue-color);
   font-size: 1rem;
   border-radius: 10px;
+  transition: 0.4s ease;
   cursor: pointer;
+}
+
+.button:hover{
+  background-color: var(--hover-blue);
+  padding: 10px 2vw 14px;
+  box-shadow: 0 0 30px #505DEC40;
+}
+
+.button:active{
+  background-color: var(--active-dark-blue);
+  box-shadow: 0 8 24px #3C49DD1A;
 }
 
 button{
   border: none;
 }
+
 .active{
   color: var(--blue-color);
 }
@@ -53,6 +66,7 @@ button{
   margin: 0 auto;
   width: 95%;
 }
-.blue-text {
-    color: var(--blue-color);
-  }
+
+.blue-text{
+  color: var(--blue-color);
+}

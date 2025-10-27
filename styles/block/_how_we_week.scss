@@ -1,6 +1,29 @@
 .how-we-work {
   background: radial-gradient(circle at bottom left, #D3B9E5, transparent 35%), radial-gradient(circle at 88% top, #D3B9E5, #D1D0F6, transparent 45%);
+  &__slide {
+    display: none;
 
+    &.acting {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      animation: slideFadeIn 0.4s ease;
+    }
+  }
+
+  @keyframes slideFadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  }
+
+  &__scroll {
+    p {
+      color: var(--color-text-dark-grey); 
+      transition: color 0.2s;
+    }
+  }
     &__img img{
         width: 100%;
         height: auto;
@@ -37,6 +60,7 @@
     display: flex;
     gap: 30px;
     cursor: pointer;
+    
 
     p:not(:last-child) {
       position: relative;

@@ -73,6 +73,13 @@
     p {
       color: var(--color-text-while); 
     }
+
+    img:hover{
+      fill: #626EEB; // не работает пока
+    }
+    p:hover{
+      color: var(--hover-blue);
+    }
   }
   &__img img{
     width: 100%;

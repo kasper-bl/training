@@ -40,9 +40,16 @@
 
   &__menu {
     column-gap: 15px;
-
     display: flex;
     align-items: center;
+    transition: 0.5s ease;
+  }
+
+  &__menu a:hover{
+    color: var(--hover-blue);
+  }
+  &__menu a:active{
+    color: var(--active-dark-blue);
   }
 
   &__controls {
@@ -58,6 +65,9 @@
 
       p{
         cursor: pointer;
+      }
+      p:hover{
+        color: var(--hover-blue);
       }
     }
     img {

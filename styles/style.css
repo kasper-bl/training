@@ -38,7 +38,22 @@ p {
   background-color: var(--blue-color);
   font-size: 1rem;
   border-radius: 10px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--hover-blue);
+  padding: 10px 2vw 14px;
+  -webkit-box-shadow: 0 0 30px rgba(80, 93, 236, 0.2509803922);
+          box-shadow: 0 0 30px rgba(80, 93, 236, 0.2509803922);
+}
+
+.button:active {
+  background-color: var(--active-dark-blue);
+  -webkit-box-shadow: 0 8 24px rgba(60, 73, 221, 0.1019607843);
+          box-shadow: 0 8 24px rgba(60, 73, 221, 0.1019607843);
 }
 
 button {
@@ -77,6 +92,8 @@ a {
   --color-text-gray: #808080;
   --color-text-while: #fff;
   --color-text-dark-grey:#1A1A1A;
+  --hover-blue: #626EEB;
+  --active-dark-blue:#2F3BB7;
 }
 
 .header {
@@ -142,6 +159,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.header__menu a:hover {
+  color: var(--hover-blue);
+}
+.header__menu a:active {
+  color: var(--active-dark-blue);
 }
 .header__controls {
   -webkit-column-gap: 15px;
@@ -170,6 +195,9 @@ a {
 }
 .header__controls .controls__languages p {
   cursor: pointer;
+}
+.header__controls .controls__languages p:hover {
+  color: var(--hover-blue);
 }
 .header__controls img {
   display: none;
@@ -265,6 +293,12 @@ a {
 .main-banner__mouse p {
   color: var(--color-text-while);
 }
+.main-banner__mouse img:hover {
+  fill: #626EEB;
+}
+.main-banner__mouse p:hover {
+  color: var(--hover-blue);
+}
 .main-banner__img img {
   width: 100%;
   height: auto;
@@ -320,6 +354,40 @@ a {
 
 .how-we-work {
   background: radial-gradient(circle at bottom left, #D3B9E5, transparent 35%), radial-gradient(circle at 88% top, #D3B9E5, #D1D0F6, transparent 45%);
+}
+.how-we-work__slide {
+  display: none;
+}
+.how-we-work__slide.acting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-animation: slideFadeIn 0.4s ease;
+          animation: slideFadeIn 0.4s ease;
+}
+@-webkit-keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+.how-we-work__scroll p {
+  color: var(--color-text-dark-grey);
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 .how-we-work__img img {
   width: 100%;
