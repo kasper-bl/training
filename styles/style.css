@@ -748,20 +748,21 @@ footer .footer__item .footer__return-to-top p {
 
 .reviews {
   background: radial-gradient(circle at bottom right, #D0C3EE, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, transparent 35%);
+  padding: 20px 0;
 }
-.reviews .reviews_item {
+.reviews__inner {
   position: relative;
-  height: 800px;
-  width: 100%;
+  height: 900px;
+  margin: 40px 0;
 }
-.reviews .reviews_item .reviews_card {
+.reviews__card {
   position: absolute;
   border-radius: 15px;
   width: 630px;
   background: #fff;
   overflow: hidden;
 }
-.reviews .reviews_item .reviews_card .header_card {
+.reviews__card .card__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -775,7 +776,7 @@ footer .footer__item .footer__return-to-top p {
   padding: 20px 20px 15px 20px;
   border-bottom: 1px solid #eee;
 }
-.reviews .reviews_item .reviews_card .header_card .user {
+.reviews__user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -784,41 +785,33 @@ footer .footer__item .footer__return-to-top p {
           align-items: center;
   gap: 15px;
 }
-.reviews .reviews_item .reviews_card .header_card .user h3 {
-  font-weight: 600;
-  color: var(--color-text-dark-grey);
-}
-.reviews .reviews_item .reviews_card .reviews_card_content {
+.reviews__card__content {
   background-color: #F9F9F9;
-  height: calc(100% - 80px);
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.reviews .reviews_item .reviews_card .reviews_card_content .star {
-  padding-top: 20px;
-}
-.reviews .reviews_card:nth-child(1) {
+.reviews__card:nth-child(1) {
   top: 3vw;
   left: 20vw;
   z-index: 4;
 }
-.reviews .reviews_card:nth-child(2) {
+.reviews__card:nth-child(2) {
   top: 8vw;
   left: 0;
   z-index: 3;
 }
-.reviews .reviews_card:nth-child(3) {
+.reviews__card:nth-child(3) {
   bottom: 13vw;
   left: 10vw;
   z-index: 1;
 }
-.reviews .reviews_card:nth-child(4) {
+.reviews__card:nth-child(4) {
   bottom: 22vw;
   right: 0;
   z-index: 2;
 }
-.reviews .reviews_button {
+.reviews__button {
   color: var(--blue-color);
   padding: 12px 20px;
   background-color: var(--color-text-while);
