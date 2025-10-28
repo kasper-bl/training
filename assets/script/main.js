@@ -69,6 +69,12 @@ reviewsContainer.addEventListener('click', (e) => {
 
 reviewsBtn.addEventListener('click', () => { 
     reviewsContainer.classList.replace("reviews__inner", "structured");
+    reviewsBtn.remove();
+    const p = document.createElement('p');
+    p.textContent = "Котики структурированы";
+    p.classList.add('reviews_p')
+    reviewsContainer.appendChild(p);
+
 })
 
 

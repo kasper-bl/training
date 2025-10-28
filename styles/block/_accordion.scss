@@ -94,4 +94,12 @@
             background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.185) 30%);
         }
     }
+
+    .accordion__box summary img {
+        transition: transform 0.3s ease;
+    }
+
+    .accordion__box[open] summary img {
+        transform: rotate(45deg);
+    }
 }
