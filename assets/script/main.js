@@ -105,3 +105,10 @@ function changeImage() {
 const intervalTimeInMs = 4000;
 
 const intervalId = setInterval(changeImage, intervalTimeInMs);
+
+const burger = document.querySelector('.burger-menu');
+const menu = document.querySelector('.menu');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+});

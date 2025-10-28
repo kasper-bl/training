@@ -74,4 +74,90 @@
       display: none;
     }
   }
+
+  .menu{
+    display: none;
+  }
 }
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  width: 85%;
+  height: 95vh; 
+  background: white; 
+  z-index: 10; 
+  display: none; 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+
+}
+
+.burger-menu.active .menu {
+  display: flex;
+}
+
+
+.burger-menu{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px; 
+
+  }
+  &__nav a{
+    font-size: 2.5rem;
+    color: var(--color-text-dark-grey);
+    font-weight: 600;
+  }
+
+  &__nav a:hover{
+    color: var(--hover-blue);
+  }
+
+  &__nav a:active{
+    color: var(--active-dark-blue);
+  }
+  &__languages{
+    display: flex;
+    gap: 5px;
+  }
+  &__languages p{
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  &__languages p:hover{
+    color: var(--hover-blue);
+  }
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+
+    .header__content{
+      align-items: center;
+      display: flex;
+      gap: 5px;
+
+      a{
+        font-size: 10px;
+      }
+    }
+  }
+
+
+}
+
+
+
+
+
+
