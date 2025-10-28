@@ -135,4 +135,9 @@
     font-weight: 600;
     cursor: pointer;
   }
+
+   &__button:hover{
+      padding: 10px 20px 14px 20px;
+      box-shadow: 0 0 30px #505dec28;
+   }
 }

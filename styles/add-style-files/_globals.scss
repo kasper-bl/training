@@ -62,6 +62,7 @@ button{
   color: var(--blue-color);
 }
 
+
 .container{
   margin: 0 auto;
   width: 95%;
@@ -83,4 +84,12 @@ button{
   }
 
 
+}
+
+input.hovering::placeholder {
+  color: #626EEB; 
+}
+
+input:focus{
+  box-shadow: 0 8px 15px #03002442;
 }

@@ -3,19 +3,18 @@ const slides = document.querySelectorAll('.how-we-work__slide');
 const images = document.querySelectorAll('.img_emoji img');
 const reviewsContainer = document.querySelector('.reviews__inner'); 
 const cards = document.querySelectorAll('.reviews__card');
-const reviewsBtn = document.querySelector('.reviews__button')
+const reviewsBtn = document.querySelector('.reviews__button');
+const input = document.querySelectorAll('input');
 
 triggers.forEach(trigger => {
 trigger.addEventListener('click', () => {
         const index = parseInt(trigger.dataset.slide);
 
-        triggers.forEach(t => t.classList.remove('acting'));
+        triggers.forEach(t => t.classList.remove('active'));
         slides.forEach(s => s.classList.remove('acting'));
 
-        if (slides[index]) {
-            slides[index].classList.add('acting');
-            trigger.classList.add('acting');
-        }
+        slides[index].classList.add('acting');
+        trigger.classList.add('active');
     });
 });
 
@@ -70,4 +69,16 @@ reviewsContainer.addEventListener('click', (e) => {
 reviewsBtn.addEventListener('click', () => { 
     reviewsContainer.classList.replace("reviews__inner", "structured");
 })
+
+
+input.forEach(input => { 
+    input.addEventListener('mouseenter', function () {
+        input.classList.add('hovering');
+    });
+
+    input.addEventListener('mouseleave', function() {
+        input.classList.remove('hovering');
+    });
+})
+
 

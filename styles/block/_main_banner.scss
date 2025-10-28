@@ -72,11 +72,12 @@
     .main-form__email-input {
       background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 1) 0%);
       width: 100%;
+      outline: none;
       padding: 15px 16px;
       border-radius: 10px;
       border: none;
-      box-sizing: border-box;
     }
+
 
     .main-form__submit-button {
       position: absolute;
@@ -88,8 +89,17 @@
       color: var(--blue-color);
       font-weight: 600;
       border: none;
-      border-radius: 5px;
+      border-radius: 5px;  
       cursor: pointer;
+    }
+
+    .main-form__submit-button:hover{
+      padding: 8px 20px 12px 20px;
+      box-shadow: 0 0 30px #505dec28;
+    }
+
+    .main-form__submit-button:active{
+      color: #2F3BB7;
     }
   }
 

@@ -86,6 +86,31 @@ button {
   margin-bottom: 30px;
 }
 
+input.hovering::-webkit-input-placeholder {
+  color: #626EEB;
+}
+
+input.hovering::-moz-placeholder {
+  color: #626EEB;
+}
+
+input.hovering:-ms-input-placeholder {
+  color: #626EEB;
+}
+
+input.hovering::-ms-input-placeholder {
+  color: #626EEB;
+}
+
+input.hovering::placeholder {
+  color: #626EEB;
+}
+
+input:focus {
+  -webkit-box-shadow: 0 8px 15px rgba(3, 0, 36, 0.2588235294);
+          box-shadow: 0 8px 15px rgba(3, 0, 36, 0.2588235294);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -338,11 +363,10 @@ a {
   background: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(255, 255, 255, 0.5)), color-stop(0%, rgb(255, 255, 255)));
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 100%, rgb(255, 255, 255) 0%);
   width: 100%;
+  outline: none;
   padding: 15px 16px;
   border-radius: 10px;
   border: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 .main-banner__email-form .main-form__submit-button {
   position: absolute;
@@ -357,6 +381,14 @@ a {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.main-banner__email-form .main-form__submit-button:hover {
+  padding: 8px 20px 12px 20px;
+  -webkit-box-shadow: 0 0 30px rgba(80, 93, 236, 0.1568627451);
+          box-shadow: 0 0 30px rgba(80, 93, 236, 0.1568627451);
+}
+.main-banner__email-form .main-form__submit-button:active {
+  color: #2F3BB7;
 }
 .main-banner__text > p {
   color: #595959;
@@ -520,8 +552,10 @@ a {
 }
 .how-we-work__slide {
   display: none;
+  -webkit-animation: slideFadeIn 0.4s ease;
+          animation: slideFadeIn 0.4s ease;
 }
-.how-we-work__slide.acting {
+.how-we-work .acting {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,8 +564,6 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  -webkit-animation: slideFadeIn 0.4s ease;
-          animation: slideFadeIn 0.4s ease;
 }
 @-webkit-keyframes slideFadeIn {
   from {
@@ -551,6 +583,9 @@ a {
   color: var(--color-text-dark-grey);
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
+}
+.how-we-work__scroll .active {
+  color: var(--blue-color);
 }
 .how-we-work__img img {
   width: 100%;
@@ -606,9 +641,6 @@ a {
   height: 20px;
   background: #fff;
   border-radius: 2px;
-}
-.how-we-work__scroll p:first-child {
-  color: var(--blue-color);
 }
 .how-we-work__btn {
   padding-top: 3vw;
@@ -686,6 +718,10 @@ a {
   text-align: center;
   background-color: #fff;
 }
+.tariff__card-info a:hover {
+  -webkit-box-shadow: 0 10px 10px rgba(80, 93, 236, 0.1568627451);
+          box-shadow: 0 10px 10px rgba(80, 93, 236, 0.1568627451);
+}
 
 .mailing {
   display: -webkit-box;
@@ -739,6 +775,11 @@ a {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+.mailing__form .mailing__button:hover {
+  padding: 8px 20px 12px 20px;
+  -webkit-box-shadow: 0 0 30px rgba(80, 93, 236, 0.2745098039);
+          box-shadow: 0 0 30px rgba(80, 93, 236, 0.2745098039);
 }
 .mailing__text p {
   line-height: 12px;
@@ -1122,6 +1163,11 @@ footer .footer__item .footer__return-to-top p {
   margin-bottom: 50px;
   font-weight: 600;
   cursor: pointer;
+}
+.reviews__button:hover {
+  padding: 10px 20px 14px 20px;
+  -webkit-box-shadow: 0 0 30px rgba(80, 93, 236, 0.1568627451);
+          box-shadow: 0 0 30px rgba(80, 93, 236, 0.1568627451);
 }
 
 @media (max-width: 768px) {

@@ -45,6 +45,11 @@
       border-radius: 10px;
       cursor: pointer;
     }
+
+    .mailing__button:hover{
+      padding: 8px 20px 12px 20px;
+      box-shadow: 0 0 30px #505dec46;
+    }
   }
 
   &__text p {

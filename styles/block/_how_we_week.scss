@@ -52,13 +52,14 @@
 
   &__slide {
     display: none;
+    animation: slideFadeIn 0.4s ease;
 
-    &.acting {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      animation: slideFadeIn 0.4s ease;
-    }
+  }
+
+  .acting{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   @keyframes slideFadeIn {
@@ -74,6 +75,10 @@
     p {
       color: var(--color-text-dark-grey); 
       transition: color 0.2s;
+    }
+
+    .active{
+      color: var(--blue-color);
     }
   }
     &__img img{
@@ -131,9 +136,6 @@
       }
     }
 
-    p:first-child {
-      color: var(--blue-color);
-    }
   }
 
   &__btn {
