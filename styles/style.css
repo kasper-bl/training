@@ -825,11 +825,14 @@ footer .footer__item .footer__return-to-top p {
 }
 
 @media (max-width: 768px) {
-  header .header_main img {
+  html {
+    font-size: 15px;
+  }
+  .header__logo img {
     display: inline;
     cursor: pointer;
   }
-  header .header_main .header_logo_menu {
+  .header__logo .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -838,17 +841,16 @@ footer .footer__item .footer__return-to-top p {
         -ms-flex-align: center;
             align-items: center;
   }
-  header .header_main .header_nav nav {
+  .header__nav nav {
     display: none;
   }
-  header .header_main .header_controls .language {
+  .header__controls .controls__languages {
     display: none;
   }
-  .main_banner {
-    height: auto;
+  .main-banner {
     background: radial-gradient(circle at left 75%, #D3B9E5, #D1D0F6, transparent 55%);
   }
-  .main_banner .main_banner_container {
+  .main-banner__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -857,40 +859,39 @@ footer .footer__item .footer__return-to-top p {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .main_banner .main_banner_container .main_banner_text .mouse {
+  .main-banner__mouse {
     display: none;
   }
-  .advantages .advantages_items {
+  .advantages__items {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .advantages .advantages_items .advantages_items_card {
+  .advantages__items-card {
     max-width: 100%;
   }
-  .how_we_work {
+  .how-we-work {
     background: radial-gradient(circle at bottom left, #D3B9E5, transparent 35%), radial-gradient(circle at right 60%, #D3B9E5, #D1D0F6, transparent 45%);
-    height: auto;
     padding-bottom: 50px;
   }
-  .how_we_work .how_we_work_content .how_we_work_item {
+  .how-we-work__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
   }
-  .how_we_work .how_we_work_content .how_we_work_item .how_we_work_content_text {
+  .how-we-work__text {
     gap: 30px;
     width: auto;
   }
-  .tariff .variant_tariff {
+  .tariff__variant {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
-  .reviews .reviews_item {
+  .reviews__inner {
     padding-top: 30px;
     height: auto;
     display: -webkit-box;
@@ -902,10 +903,10 @@ footer .footer__item .footer__return-to-top p {
             flex-direction: column;
     gap: 20px;
   }
-  .reviews .reviews_item .reviews_card {
+  .reviews__card {
     position: static;
   }
-  .reviews .reviews_button {
+  .reviews__button {
     display: none;
   }
   .mailing {
@@ -915,17 +916,20 @@ footer .footer__item .footer__return-to-top p {
             flex-direction: column;
     gap: 30px;
   }
-  .mailing .mailing_text {
+  .mailing__text {
     gap: 30px;
+    width: 90%;
   }
-  .mailing .mailing_text .email_form .submit_button {
-    right: 200px;
-    top: 9%;
+  .mailing__text .mailing__form {
+    width: 80%;
   }
-  .feedback .feedback_container img {
+  .feedback {
+    padding: 30px 0;
+  }
+  .feedback__inner img {
     display: none;
   }
-  .feedback .feedback_container .form_text form .form_input input {
+  .feedback__form_text form .form_input input {
     width: 600px;
   }
 }
