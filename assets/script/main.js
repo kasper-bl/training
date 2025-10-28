@@ -5,6 +5,7 @@ const reviewsContainer = document.querySelector('.reviews__inner');
 const cards = document.querySelectorAll('.reviews__card');
 const reviewsBtn = document.querySelector('.reviews__button');
 const input = document.querySelectorAll('input');
+const img = document.querySelector('#feedbacImg');
 
 triggers.forEach(trigger => {
 trigger.addEventListener('click', () => {
@@ -82,3 +83,19 @@ input.forEach(input => {
 })
 
 
+const imageSources = [
+    'assets/img/feedback-photo/feedback.png',
+    'assets/img/feedback-photo/2variant.png',
+    'assets/img/feedback-photo/3variant.png'
+
+];
+
+let imgIndex = 0;
+function changeImage() {
+    img.src = imageSources[imgIndex]; 
+    imgIndex = (imgIndex + 1) % 3; 
+}
+
+const intervalTimeInMs = 4000;
+
+const intervalId = setInterval(changeImage, intervalTimeInMs);

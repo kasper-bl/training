@@ -925,6 +925,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 5vw;
+  height: 700px;
 }
 .feedback img {
   width: 40%;
