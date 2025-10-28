@@ -1302,14 +1302,13 @@ footer .footer__item .footer__return-to-top a {
   }
 }
 @media (max-width: 375px) {
-  .container {
-    background-color: var(--color-body-backgroung);
-    padding: 10px;
+  html {
+    font-size: 10px;
   }
   .padding {
     padding: 14px 20px;
   }
-  header .header_main .header_logo_menu {
+  header .header__inner .header__logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1318,84 +1317,88 @@ footer .footer__item .footer__return-to-top a {
         -ms-flex-align: center;
             align-items: center;
   }
-  header .header_main .header_nav nav {
+  header .header__inner .header__nav nav {
     display: none;
   }
-  header .header_main .header_controls img {
+  header .header__inner .header__controls img {
     display: inline;
     cursor: pointer;
   }
-  header .header_main .header_controls a {
+  header .header__inner .header__controls a {
     display: none;
   }
-  header .header_main .header_controls .language {
+  header .header__inner .header__controls .controls__languages {
     display: none;
   }
-  .main_banner .main_banner_container img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .main_banner .main_banner_container .main_banner_text .email_form input {
+  .main-banner .text__container {
     width: 100%;
   }
-  .main_banner .main_banner_container .main_banner_text .email_form button {
+  .main-banner__email-form {
+    width: 100%;
+  }
+  .main-banner .main-banner__container .main-banner__text .main-banner__email-form input {
+    width: 80vw;
+  }
+  .main-banner .main-banner__container .main-banner__text .main-banner__email-form button {
     left: 190px;
   }
   .advantages h2 {
     font-size: 20px;
   }
-  .advantages .advantages_items {
+  .advantages .advantages__inner {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .advantages .advantages_items .advantages_items_card {
+  .advantages .advantages__inner .advantages__card {
     max-width: 100%;
   }
-  .advantages .advantages_items .advantages_items_card p {
+  .advantages .advantages__inner .advantages__card p {
     font-size: 14px;
   }
-  .how_we_work {
+  .how-we-work {
     background: radial-gradient(circle at bottom left, #D3B9E5, transparent 35%), radial-gradient(circle at right 60%, #D3B9E5, #D1D0F6, transparent 45%);
     height: auto;
     padding-bottom: 50px;
   }
-  .how_we_work .how_we_work_content .how_we_work_item {
+  .how-we-work .how-we-work__inner .how-we-work__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
   }
-  .how_we_work .how_we_work_content .how_we_work_item .how_we_work_img img {
+  .how-we-work .how-we-work__inner .how-we-work__item .how-we-work__img img {
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .how_we_work .how_we_work_content .how_we_work_item .how_we_work_content_text {
+  .how-we-work .how-we-work__inner .how-we-work__item .how-we-work__content-text {
     gap: 30px;
     width: auto;
   }
-  .tariff .variant_tariff {
+  .tariff__variant {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 30px;
   }
-  .tariff .variant_tariff .tariff_card {
+  .tariff .tariff__inner .tariff__card {
     width: 100%;
   }
-  .reviews .reviews_item .reviews_card {
+  .reviews .reviews__inner {
+    height: auto;
+  }
+  .reviews .reviews__inner .reviews__card {
     width: 100%;
   }
-  .reviews .reviews_item .reviews_card p {
+  .reviews .reviews__inner .reviews__card p {
     font-size: 14px;
   }
-  .reviews .reviews_button {
+  .reviews .reviews__button {
     display: none;
   }
   .mailing {
@@ -1416,7 +1419,7 @@ footer .footer__item .footer__return-to-top a {
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .mailing .mailing_text {
+  .mailing .mailing__text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1426,47 +1429,46 @@ footer .footer__item .footer__return-to-top a {
             flex-direction: column;
     gap: 10px;
   }
-  .mailing .mailing_text h2 {
-    font-size: clamp(18px, 2.5vw, 36px);
-  }
-  .mailing .mailing_text .email_form input {
+  .mailing .mailing__text .email-form input {
     width: 100%;
   }
-  .mailing .mailing_text .email_form .submit_button {
+  .mailing .mailing__text .email-form .submit-button {
     right: 24px;
   }
-  .feedback .feedback_container img {
-    display: none;
+  .feedback__inner {
+    height: auto;
   }
-  .feedback .feedback_container .form_text form .form_input input {
+  .feedback__form-text {
     width: 100%;
   }
-  .feedback .feedback_container .form_text .form_button {
+  .feedback__form-input input {
+    width: 100%;
+  }
+  .feedback .feedback__container img {
+    display: none;
+  }
+  .feedback .feedback__container .feedback__text form .form-input input {
+    width: 100%;
+  }
+  .feedback .feedback__container .feedback__text .form-button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .feedback .feedback_container .form_text .form_button button {
+  .feedback .feedback__container .feedback__text .form-button button {
     width: 100%;
   }
-  .feedback .feedback_container .form_text .form_button p {
-    width: 90%;
-  }
-  footer .footer_text h2 {
-    font-size: clamp(12px, 1.25vw, 18px);
+  footer .footer__text h2 {
     font-weight: 200;
   }
-  footer .footer_text p {
-    font-size: clamp(10px, 1.25vw, 18px);
-  }
-  footer .Return_to_top {
+  footer .footer__top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 2px;
   }
-  footer .Return_to_top p {
-    font-size: clamp(10px, 1.25vw, 18px);
+  footer img {
+    display: none;
   }
 }

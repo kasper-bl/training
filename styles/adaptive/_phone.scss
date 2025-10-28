@@ -1,235 +1,247 @@
-@media(max-width: 375px){
+@media (max-width: 375px) {
 
-    .container{
-    background-color: var(--color-body-backgroung);
-    padding: 10px;
+    html{
+        font-size: 10px;
     }
 
-    .padding{
+  .padding {
     padding: 14px 20px;
-    }
+  }
 
-    header {
-        .header_main {
-            
-            .header_logo_menu{
-                display: flex;
-                gap: 10px;
-                align-items: center;
-            }
-            .header_nav{
-                nav{
-                    display: none;
-                } 
-            }
-
-            .header_controls{
-                img{
-                    display: inline;
-                    cursor: pointer;
-                }
-                a{
-                    display: none;
-                }
-                .language {
-                    display: none;
-                }
-            }
-        }     
-    }
-
-// main
-
-    .main_banner{
-       
-        .main_banner_container{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-            .main_banner_text{
-                .email_form{
-                    input{
-                        width: 100%;
-                    }
-                    button{
-                        left: 190px;
-                    }
-                }
-            }
+  // header
+  header {
+    .header {
+      &__inner {
+        .header__logo {
+          display: flex;
+          gap: 10px;
+          align-items: center;
         }
+
+        .header__nav {
+          nav {
+            display: none;
+          }
+        }
+
+        .header__controls {
+          img {
+            display: inline;
+            cursor: pointer;
+          }
+
+          a {
+            display: none;
+          }
+
+          .controls__languages {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  // main-banner
+
+    .main-banner .text__container {
+        width: 100%; 
     }
 
+    .main-banner__email-form {
+        width: 100%; 
+    }
+    .main-banner {
+    .main-banner__container {
 
-// advantages
-    .advantages{
-        h2{
-            font-size: 20px ;
-        }
-        .advantages_items{
-            display: grid;
-            grid-template-columns: 1fr; 
-            gap: 20px;
+      .main-banner__text {
+        .main-banner__email-form {
+          input {
+            width: 80vw;
+          }
 
-            .advantages_items_card{
-                max-width: 100%;
-                p{
-                    font-size: 14px;
-                }
-            }
+          button {
+            left: 190px; 
+          }
         }
+      }
+    }
+  }
+
+  // advantages
+  .advantages {
+    h2 {
+      font-size: 20px;
     }
 
+    .advantages__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
 
-// how we week
+      .advantages__card {
+        max-width: 100%;
 
-.how_we_work{
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  // how-we-work
+  .how-we-work {
     background: 
-    radial-gradient(circle at bottom left, #D3B9E5, transparent 35%),
-    radial-gradient(  circle at right 60%, 
-    #D3B9E5, #D1D0F6, transparent 45%);
+      radial-gradient(circle at bottom left, #D3B9E5, transparent 35%),
+      radial-gradient(circle at right 60%, #D3B9E5, #D1D0F6, transparent 45%);
     height: auto;
     padding-bottom: 50px;
 
-    .how_we_work_content{
-        .how_we_work_item{
-            flex-direction: column;
-            gap: 20px;
-
-            .how_we_work_img{
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                }
-                
-            }
-
-            .how_we_work_content_text{
-                gap: 30px;
-                width: auto;
-                }
-
-            }
-        }
-    }
-
-    //tariff
-
-    .tariff{
-        .variant_tariff{
-
-            grid-template-columns: 1fr;
-            gap: 30px;
-
-            .tariff_card{
-                width: 100%;
-            }
-
-        }
-    }
-
-    // reviews
-
-    .reviews{
-        .reviews_item{
-
-            .reviews_card{
-
-                width: 100%;
-                p{
-                    font-size: 14px;
-                }
-            }
-
-        }
-
-
-        .reviews_button{
-            display: none;
-        }
-    }
-
-    //mailing
-
-    .mailing{
-        display: flex;
+    .how-we-work__inner {
+      .how-we-work__item {
         flex-direction: column;
-        align-items: center;
+        gap: 20px;
 
-        img{
+        .how-we-work__img {
+          img {
             width: 100%;
             height: 100%;
             object-fit: contain;
+          }
         }
-        .mailing_text{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
 
-            h2{
-                @include text-fluid(18, 36);
-            }
-            .email_form{
-                input{
-                    width: 100%;
-                }
-                .submit_button{
-                    right: 24px;
-                }
-            }
+        .how-we-work__content-text {
+          gap: 30px;
+          width: auto;
         }
+      }
+    }
+  }
+
+  // tariff
+  .tariff {
+
+    &__variant {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .tariff__inner {
+      .tariff__card {
+        width: 100%;
+      }
+    }
+  }
+
+  // reviews
+  .reviews {
+    .reviews__inner {
+        height: auto;
+      .reviews__card {
+        width: 100%;
+
+        p {
+          font-size: 14px;
+        }
+      }
     }
 
-    //feedback
-    .feedback{
-        .feedback_container{
+    .reviews__button {
+      display: none;
+    }
+  }
 
-            img{
-                display: none;
-            }
+  // mailing
+  .mailing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-            .form_text{
-                form{
-                    .form_input{
-                        
-                        input{
-                            width: 100%;
-                        }
-                    }
-                }
-                .form_button{
-                    flex-direction: column;
-                    button{
-                        width: 100%;
-                    }
-                    p{
-                        width: 90%;
-                    }
-                }
-            }
-        }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 
-    footer{
-        .footer_text{
-            h2{
-                @include text-fluid(12,18);
-                font-weight: 200;
-            }
-            p{
-                @include text-fluid(10,18);
-            }
+    .mailing__text {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      h2 {
+
+      }
+
+      .email-form {
+        input {
+          width: 100%;
         }
 
-        .Return_to_top{
-            display: flex;
-            gap: 2px;
-            p{
-                @include text-fluid(10,18);
-            }
-            
+        .submit-button {
+          right: 24px;
         }
+      }
     }
+  }
+
+  // feedback
+
+  .feedback__inner {
+    height: auto;
+  }
+
+  .feedback__form-text {
+    width: 100%;
+  }
+
+  .feedback__form-input input{
+    width: 100%;
+  }
+  .feedback {
+    .feedback__container {
+      img {
+        display: none;
+      }
+
+      .feedback__text {
+        form {
+          .form-input {
+            input {
+              width: 100%;
+            }
+          }
+        }
+
+        .form-button {
+          flex-direction: column;
+
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  // footer
+  footer {
+    .footer__text {
+      h2 {
+
+        font-weight: 200;
+      }
+
+      p {
+
+      }
+    }
+
+    .footer__top {
+      display: flex;
+      gap: 2px;
+
+    }
+    img{
+        display: none;
+    }
+  }
 }
