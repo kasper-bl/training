@@ -70,3 +70,14 @@ button{
 .blue-text{
   color: var(--blue-color);
 }
+
+.structured{
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  .reviews__card{
+    position: static;
+  }
+}

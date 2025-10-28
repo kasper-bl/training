@@ -16,7 +16,6 @@
     border-radius: 15px;
     width: 630px;
     background: #fff;
-    overflow: hidden;
 
     .card__title {
       display: flex;
@@ -46,7 +45,7 @@
     z-index: 4;
   }
 
-  &__card:nth-child(2) {
+  &__card:nth-child(4) {
     top: 8vw;
     left: 0;
     z-index: 3;
@@ -58,7 +57,7 @@
     z-index: 1;
   }
 
-  &__card:nth-child(4) {
+  &__card:nth-child(2) {
     bottom: 22vw;
     right: 0;
     z-index: 2;
