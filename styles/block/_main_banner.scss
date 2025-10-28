@@ -1,5 +1,24 @@
 .main-banner {
-  background: radial-gradient(circle at bottom left,#d3b9e5,#d1d0f6,transparent 35%);
+  background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+  animation: gradient 10s infinite;
+
+  @keyframes gradient {
+    0% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+    }
+    25% {
+      background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%); 
+    }
+    50% {
+      background: radial-gradient(circle at bottom left, #d1d0f6, #d3b9e5, transparent 35%);
+    }
+    75% {
+      background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%);
+    }
+    100% {
+      background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+    }
+  }
 
   &__container {
     display: flex;

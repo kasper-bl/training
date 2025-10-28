@@ -3,9 +3,7 @@
         font-size: 15px;
     }
     .header{
-        // &__inner{
 
-        // }
 
         &__logo{
             img{
@@ -44,6 +42,10 @@
         }
         &__mouse{
             display: none;
+        }
+
+        .text__container{
+            width: 500px;
         }
 
     }

@@ -205,6 +205,42 @@ a {
 
 .main-banner {
   background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+  -webkit-animation: gradient 10s infinite;
+          animation: gradient 10s infinite;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+  }
+  25% {
+    background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%);
+  }
+  50% {
+    background: radial-gradient(circle at bottom left, #d1d0f6, #d3b9e5, transparent 35%);
+  }
+  75% {
+    background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%);
+  }
+  100% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+  }
+}
+@keyframes gradient {
+  0% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+  }
+  25% {
+    background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%);
+  }
+  50% {
+    background: radial-gradient(circle at bottom left, #d1d0f6, #d3b9e5, transparent 35%);
+  }
+  75% {
+    background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%);
+  }
+  100% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+  }
 }
 .main-banner__container {
   display: -webkit-box;
@@ -861,6 +897,9 @@ footer .footer__item .footer__return-to-top p {
   }
   .main-banner__mouse {
     display: none;
+  }
+  .main-banner .text__container {
+    width: 500px;
   }
   .advantages__items {
     display: -ms-grid;
