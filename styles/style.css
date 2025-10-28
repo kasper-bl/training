@@ -74,7 +74,7 @@ button {
 }
 
 .structured {
-  padding-top: 30px;
+  padding: 30px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr;
@@ -83,6 +83,7 @@ button {
 }
 .structured .reviews__card {
   position: static;
+  margin-bottom: 30px;
 }
 
 * {
@@ -216,7 +217,7 @@ a {
 }
 
 .main-banner {
-  background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+  background: radial-gradient(circle at bottom left, #D3B9E5, #D1D0F6, transparent 35%);
   -webkit-animation: gradient 10s infinite;
           animation: gradient 10s infinite;
 }
@@ -224,14 +225,32 @@ a {
   0% {
     background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
   }
-  25% {
+  10% {
+    background: radial-gradient(circle at bottom left, #d2bce6, #d2cdf5, transparent 35%);
+  }
+  20% {
     background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%);
   }
-  50% {
+  30% {
+    background: radial-gradient(circle at bottom left, #d2cdf5, #d2bce6, transparent 35%);
+  }
+  40% {
     background: radial-gradient(circle at bottom left, #d1d0f6, #d3b9e5, transparent 35%);
   }
-  75% {
+  50% {
+    background: radial-gradient(circle at bottom left, #d2d0f0, #d3bde1, transparent 35%);
+  }
+  60% {
     background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%);
+  }
+  70% {
+    background: radial-gradient(circle at bottom left, #d3bde1, #d2d0f0, transparent 35%);
+  }
+  80% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+  }
+  90% {
+    background: radial-gradient(circle at bottom left, #d2bbf0, #d2cdfa, transparent 35%);
   }
   100% {
     background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
@@ -241,14 +260,32 @@ a {
   0% {
     background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
   }
-  25% {
+  10% {
+    background: radial-gradient(circle at bottom left, #d2bce6, #d2cdf5, transparent 35%);
+  }
+  20% {
     background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%);
   }
-  50% {
+  30% {
+    background: radial-gradient(circle at bottom left, #d2cdf5, #d2bce6, transparent 35%);
+  }
+  40% {
     background: radial-gradient(circle at bottom left, #d1d0f6, #d3b9e5, transparent 35%);
   }
-  75% {
+  50% {
+    background: radial-gradient(circle at bottom left, #d2d0f0, #d3bde1, transparent 35%);
+  }
+  60% {
     background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%);
+  }
+  70% {
+    background: radial-gradient(circle at bottom left, #d3bde1, #d2d0f0, transparent 35%);
+  }
+  80% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+  }
+  90% {
+    background: radial-gradient(circle at bottom left, #d2bbf0, #d2cdfa, transparent 35%);
   }
   100% {
     background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
@@ -408,6 +445,78 @@ a {
 
 .how-we-work {
   background: radial-gradient(circle at bottom left, #D3B9E5, transparent 35%), radial-gradient(circle at 88% top, #D3B9E5, #D1D0F6, transparent 45%);
+  -webkit-animation: gradientHowWeWork 10s infinite;
+          animation: gradientHowWeWork 10s infinite;
+}
+@-webkit-keyframes gradientHowWeWork {
+  0% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, #d1d0f6, transparent 45%);
+  }
+  10% {
+    background: radial-gradient(circle at bottom left, #d2bce6, transparent 35%), radial-gradient(circle at 88% top, #d2bce6, #d2cdf5, transparent 45%);
+  }
+  20% {
+    background: radial-gradient(circle at bottom left, #d2c1eb, transparent 35%), radial-gradient(circle at 88% top, #d2c1eb, #d2c1eb, transparent 45%);
+  }
+  30% {
+    background: radial-gradient(circle at bottom left, #d2cdf5, transparent 35%), radial-gradient(circle at 88% top, #d2cdf5, #d2bce6, transparent 45%);
+  }
+  40% {
+    background: radial-gradient(circle at bottom left, #d1d0f6, transparent 35%), radial-gradient(circle at 88% top, #d1d0f6, #d3b9e5, transparent 45%);
+  }
+  50% {
+    background: radial-gradient(circle at bottom left, #d2d0f0, transparent 35%), radial-gradient(circle at 88% top, #d2d0f0, #d3bde1, transparent 45%);
+  }
+  60% {
+    background: radial-gradient(circle at bottom left, #d2c1eb, transparent 35%), radial-gradient(circle at 88% top, #d2c1eb, #d2c1eb, transparent 45%);
+  }
+  70% {
+    background: radial-gradient(circle at bottom left, #d3bde1, transparent 35%), radial-gradient(circle at 88% top, #d3bde1, #d2d0f0, transparent 45%);
+  }
+  80% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, #d1d0f6, transparent 45%);
+  }
+  90% {
+    background: radial-gradient(circle at bottom left, #d2bbf0, transparent 35%), radial-gradient(circle at 88% top, #d2bbf0, #d2cdfa, transparent 45%);
+  }
+  100% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, #d1d0f6, transparent 45%);
+  }
+}
+@keyframes gradientHowWeWork {
+  0% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, #d1d0f6, transparent 45%);
+  }
+  10% {
+    background: radial-gradient(circle at bottom left, #d2bce6, transparent 35%), radial-gradient(circle at 88% top, #d2bce6, #d2cdf5, transparent 45%);
+  }
+  20% {
+    background: radial-gradient(circle at bottom left, #d2c1eb, transparent 35%), radial-gradient(circle at 88% top, #d2c1eb, #d2c1eb, transparent 45%);
+  }
+  30% {
+    background: radial-gradient(circle at bottom left, #d2cdf5, transparent 35%), radial-gradient(circle at 88% top, #d2cdf5, #d2bce6, transparent 45%);
+  }
+  40% {
+    background: radial-gradient(circle at bottom left, #d1d0f6, transparent 35%), radial-gradient(circle at 88% top, #d1d0f6, #d3b9e5, transparent 45%);
+  }
+  50% {
+    background: radial-gradient(circle at bottom left, #d2d0f0, transparent 35%), radial-gradient(circle at 88% top, #d2d0f0, #d3bde1, transparent 45%);
+  }
+  60% {
+    background: radial-gradient(circle at bottom left, #d2c1eb, transparent 35%), radial-gradient(circle at 88% top, #d2c1eb, #d2c1eb, transparent 45%);
+  }
+  70% {
+    background: radial-gradient(circle at bottom left, #d3bde1, transparent 35%), radial-gradient(circle at 88% top, #d3bde1, #d2d0f0, transparent 45%);
+  }
+  80% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, #d1d0f6, transparent 45%);
+  }
+  90% {
+    background: radial-gradient(circle at bottom left, #d2bbf0, transparent 35%), radial-gradient(circle at 88% top, #d2bbf0, #d2cdfa, transparent 45%);
+  }
+  100% {
+    background: radial-gradient(circle at bottom left, #d3b9e5, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, #d1d0f6, transparent 45%);
+  }
 }
 .how-we-work__slide {
   display: none;
@@ -642,7 +751,79 @@ a {
 
 .accordion {
   padding: 50px 0;
-  background: radial-gradient(circle at top right, rgb(211, 185, 229), transparent 50%), radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%), #f8f9fa;
+  background: radial-gradient(circle at top right, rgb(211, 185, 229), transparent 50%), radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+  -webkit-animation: gradientAccordion 10s infinite;
+          animation: gradientAccordion 10s infinite;
+}
+@-webkit-keyframes gradientAccordion {
+  0% {
+    background: radial-gradient(circle at top right, #d3b9e5, transparent 50%), radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+  }
+  10% {
+    background: radial-gradient(circle at top right, #d2bce6, transparent 50%), radial-gradient(circle at bottom left, rgba(210, 188, 230, 0.6), rgba(210, 205, 245, 0.7), transparent 30%);
+  }
+  20% {
+    background: radial-gradient(circle at top right, #d2c1eb, transparent 50%), radial-gradient(circle at bottom left, rgba(210, 193, 235, 0.6), rgba(210, 193, 235, 0.7), transparent 30%);
+  }
+  30% {
+    background: radial-gradient(circle at top right, #d2cdf5, transparent 50%), radial-gradient(circle at bottom left, rgba(210, 205, 245, 0.6), rgba(210, 188, 230, 0.7), transparent 30%);
+  }
+  40% {
+    background: radial-gradient(circle at top right, #d1d0f6, transparent 50%), radial-gradient(circle at bottom left, rgba(209, 208, 246, 0.6), rgba(211, 185, 229, 0.7), transparent 30%);
+  }
+  50% {
+    background: radial-gradient(circle at top right, #d2d0f0, transparent 50%), radial-gradient(circle at bottom left, rgba(210, 208, 240, 0.6), rgba(211, 189, 225, 0.7), transparent 30%);
+  }
+  60% {
+    background: radial-gradient(circle at top right, #d2c1eb, transparent 50%), radial-gradient(circle at bottom left, rgba(210, 193, 235, 0.6), rgba(210, 193, 235, 0.7), transparent 30%);
+  }
+  70% {
+    background: radial-gradient(circle at top right, #d3bde1, transparent 50%), radial-gradient(circle at bottom left, rgba(211, 189, 225, 0.6), rgba(210, 208, 240, 0.7), transparent 30%);
+  }
+  80% {
+    background: radial-gradient(circle at top right, #d3b9e5, transparent 50%), radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+  }
+  90% {
+    background: radial-gradient(circle at top right, #d2bbf0, transparent 50%), radial-gradient(circle at bottom left, rgba(210, 187, 240, 0.6), rgba(210, 205, 250, 0.7), transparent 30%);
+  }
+  100% {
+    background: radial-gradient(circle at top right, #d3b9e5, transparent 50%), radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+  }
+}
+@keyframes gradientAccordion {
+  0% {
+    background: radial-gradient(circle at top right, #d3b9e5, transparent 50%), radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+  }
+  10% {
+    background: radial-gradient(circle at top right, #d2bce6, transparent 50%), radial-gradient(circle at bottom left, rgba(210, 188, 230, 0.6), rgba(210, 205, 245, 0.7), transparent 30%);
+  }
+  20% {
+    background: radial-gradient(circle at top right, #d2c1eb, transparent 50%), radial-gradient(circle at bottom left, rgba(210, 193, 235, 0.6), rgba(210, 193, 235, 0.7), transparent 30%);
+  }
+  30% {
+    background: radial-gradient(circle at top right, #d2cdf5, transparent 50%), radial-gradient(circle at bottom left, rgba(210, 205, 245, 0.6), rgba(210, 188, 230, 0.7), transparent 30%);
+  }
+  40% {
+    background: radial-gradient(circle at top right, #d1d0f6, transparent 50%), radial-gradient(circle at bottom left, rgba(209, 208, 246, 0.6), rgba(211, 185, 229, 0.7), transparent 30%);
+  }
+  50% {
+    background: radial-gradient(circle at top right, #d2d0f0, transparent 50%), radial-gradient(circle at bottom left, rgba(210, 208, 240, 0.6), rgba(211, 189, 225, 0.7), transparent 30%);
+  }
+  60% {
+    background: radial-gradient(circle at top right, #d2c1eb, transparent 50%), radial-gradient(circle at bottom left, rgba(210, 193, 235, 0.6), rgba(210, 193, 235, 0.7), transparent 30%);
+  }
+  70% {
+    background: radial-gradient(circle at top right, #d3bde1, transparent 50%), radial-gradient(circle at bottom left, rgba(211, 189, 225, 0.6), rgba(210, 208, 240, 0.7), transparent 30%);
+  }
+  80% {
+    background: radial-gradient(circle at top right, #d3b9e5, transparent 50%), radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+  }
+  90% {
+    background: radial-gradient(circle at top right, #d2bbf0, transparent 50%), radial-gradient(circle at bottom left, rgba(210, 187, 240, 0.6), rgba(210, 205, 250, 0.7), transparent 30%);
+  }
+  100% {
+    background: radial-gradient(circle at top right, #d3b9e5, transparent 50%), radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+  }
 }
 .accordion__items {
   display: -webkit-box;
@@ -797,6 +978,78 @@ footer .footer__item .footer__return-to-top p {
 .reviews {
   background: radial-gradient(circle at bottom right, #D0C3EE, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, transparent 35%);
   padding: 20px 0;
+  -webkit-animation: gradientRewievs 10s infinite;
+          animation: gradientRewievs 10s infinite;
+}
+@-webkit-keyframes gradientRewievs {
+  0% {
+    background: radial-gradient(circle at bottom right, #d0c3ee, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, transparent 35%);
+  }
+  10% {
+    background: radial-gradient(circle at bottom right, #d1c6f0, transparent 35%), radial-gradient(circle at 88% top, #d2bce6, transparent 35%);
+  }
+  20% {
+    background: radial-gradient(circle at bottom right, #d2cbf2, transparent 35%), radial-gradient(circle at 88% top, #d2c1eb, transparent 35%);
+  }
+  30% {
+    background: radial-gradient(circle at bottom right, #d2d0f5, transparent 35%), radial-gradient(circle at 88% top, #d2cdf5, transparent 35%);
+  }
+  40% {
+    background: radial-gradient(circle at bottom right, #d1d0f6, transparent 35%), radial-gradient(circle at 88% top, #d1d0f6, transparent 35%);
+  }
+  50% {
+    background: radial-gradient(circle at bottom right, #d2d0f2, transparent 35%), radial-gradient(circle at 88% top, #d2d0f0, transparent 35%);
+  }
+  60% {
+    background: radial-gradient(circle at bottom right, #d2cbf2, transparent 35%), radial-gradient(circle at 88% top, #d2c1eb, transparent 35%);
+  }
+  70% {
+    background: radial-gradient(circle at bottom right, #d3cdef, transparent 35%), radial-gradient(circle at 88% top, #d3bde1, transparent 35%);
+  }
+  80% {
+    background: radial-gradient(circle at bottom right, #d0c3ee, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, transparent 35%);
+  }
+  90% {
+    background: radial-gradient(circle at bottom right, #d1c6f4, transparent 35%), radial-gradient(circle at 88% top, #d2bbf0, transparent 35%);
+  }
+  100% {
+    background: radial-gradient(circle at bottom right, #d0c3ee, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, transparent 35%);
+  }
+}
+@keyframes gradientRewievs {
+  0% {
+    background: radial-gradient(circle at bottom right, #d0c3ee, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, transparent 35%);
+  }
+  10% {
+    background: radial-gradient(circle at bottom right, #d1c6f0, transparent 35%), radial-gradient(circle at 88% top, #d2bce6, transparent 35%);
+  }
+  20% {
+    background: radial-gradient(circle at bottom right, #d2cbf2, transparent 35%), radial-gradient(circle at 88% top, #d2c1eb, transparent 35%);
+  }
+  30% {
+    background: radial-gradient(circle at bottom right, #d2d0f5, transparent 35%), radial-gradient(circle at 88% top, #d2cdf5, transparent 35%);
+  }
+  40% {
+    background: radial-gradient(circle at bottom right, #d1d0f6, transparent 35%), radial-gradient(circle at 88% top, #d1d0f6, transparent 35%);
+  }
+  50% {
+    background: radial-gradient(circle at bottom right, #d2d0f2, transparent 35%), radial-gradient(circle at 88% top, #d2d0f0, transparent 35%);
+  }
+  60% {
+    background: radial-gradient(circle at bottom right, #d2cbf2, transparent 35%), radial-gradient(circle at 88% top, #d2c1eb, transparent 35%);
+  }
+  70% {
+    background: radial-gradient(circle at bottom right, #d3cdef, transparent 35%), radial-gradient(circle at 88% top, #d3bde1, transparent 35%);
+  }
+  80% {
+    background: radial-gradient(circle at bottom right, #d0c3ee, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, transparent 35%);
+  }
+  90% {
+    background: radial-gradient(circle at bottom right, #d1c6f4, transparent 35%), radial-gradient(circle at 88% top, #d2bbf0, transparent 35%);
+  }
+  100% {
+    background: radial-gradient(circle at bottom right, #d0c3ee, transparent 35%), radial-gradient(circle at 88% top, #d3b9e5, transparent 35%);
+  }
 }
 .reviews__inner {
   position: relative;

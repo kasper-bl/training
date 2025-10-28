@@ -68,6 +68,6 @@ reviewsContainer.addEventListener('click', (e) => {
 });
 
 reviewsBtn.addEventListener('click', () => { 
-    reviewsContainer.classList.replace("reviews__inner", "structured")
+    reviewsContainer.classList.replace("reviews__inner", "structured");
 })
 

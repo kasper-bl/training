@@ -1,6 +1,55 @@
 .accordion {
     padding: 50px 0;
-    background: radial-gradient(circle at top right, rgb(211, 185, 229), transparent 50%), radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%), #f8f9fa;
+    background: radial-gradient(circle at top right, rgb(211, 185, 229), transparent 50%),
+                radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+    animation: gradientAccordion 10s infinite;
+
+    @keyframes gradientAccordion {
+        0% {
+            background: radial-gradient(circle at top right, #d3b9e5, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+        }
+        10% {
+            background: radial-gradient(circle at top right, #d2bce6, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(210, 188, 230, 0.6), rgba(210, 205, 245, 0.7), transparent 30%);
+        }
+        20% {
+            background: radial-gradient(circle at top right, #d2c1eb, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(210, 193, 235, 0.6), rgba(210, 193, 235, 0.7), transparent 30%);
+        }
+        30% {
+            background: radial-gradient(circle at top right, #d2cdf5, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(210, 205, 245, 0.6), rgba(210, 188, 230, 0.7), transparent 30%);
+        }
+        40% {
+            background: radial-gradient(circle at top right, #d1d0f6, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(209, 208, 246, 0.6), rgba(211, 185, 229, 0.7), transparent 30%);
+        }
+        50% {
+            background: radial-gradient(circle at top right, #d2d0f0, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(210, 208, 240, 0.6), rgba(211, 189, 225, 0.7), transparent 30%);
+        }
+        60% {
+            background: radial-gradient(circle at top right, #d2c1eb, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(210, 193, 235, 0.6), rgba(210, 193, 235, 0.7), transparent 30%);
+        }
+        70% {
+            background: radial-gradient(circle at top right, #d3bde1, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(211, 189, 225, 0.6), rgba(210, 208, 240, 0.7), transparent 30%);
+        }
+        80% {
+            background: radial-gradient(circle at top right, #d3b9e5, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+        }
+        90% {
+            background: radial-gradient(circle at top right, #d2bbf0, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(210, 187, 240, 0.6), rgba(210, 205, 250, 0.7), transparent 30%);
+        }
+        100% {
+            background: radial-gradient(circle at top right, #d3b9e5, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+        }
+    }
 
     &__items {
         display: flex;

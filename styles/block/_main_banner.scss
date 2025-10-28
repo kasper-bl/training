@@ -1,22 +1,41 @@
 .main-banner {
-  background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+  background: radial-gradient(circle at bottom left,#D3B9E5, #D1D0F6, transparent 35% );
   animation: gradient 10s infinite;
 
   @keyframes gradient {
     0% {
-    background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+      background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
     }
-    25% {
-      background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%); 
+    10% {
+      background: radial-gradient(circle at bottom left, #d2bce6, #d2cdf5, transparent 35%);
     }
-    50% {
-      background: radial-gradient(circle at bottom left, #d1d0f6, #d3b9e5, transparent 35%);
-    }
-    75% {
+    20% {
       background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%);
     }
+    30% {
+      background: radial-gradient(circle at bottom left, #d2cdf5, #d2bce6, transparent 35%);
+    }
+    40% {
+      background: radial-gradient(circle at bottom left, #d1d0f6, #d3b9e5, transparent 35%);
+    }
+    50% {
+      background: radial-gradient(circle at bottom left, #d2d0f0, #d3bde1, transparent 35%);
+    }
+    60% {
+      background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%),
+    }
+    70% {
+      background: radial-gradient(circle at bottom left, #d3bde1, #d2d0f0, transparent 35%),
+    }
+    80% {
+      background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%),
+    }
+    90% {
+      background: radial-gradient(circle at bottom left, #d2bbf0, #d2cdfa, transparent 35%);
+    }
     100% {
-      background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+      background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%),
+
     }
   }
 
