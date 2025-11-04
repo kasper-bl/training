@@ -1,7 +1,3 @@
-@font-face {
-  font-family:Visuelt Pro;
-  src: url('/assets/fonts/VisueltPro-Regular.woff2');
-}
 
 body {
   background-color: var(--color-body-backgroung);
@@ -97,4 +93,8 @@ input:focus{
 
 .reviews_p{
   display: block;
+}
+
+.no-scroll{
+  overflow: hidden;
 }

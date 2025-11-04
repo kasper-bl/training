@@ -6,6 +6,9 @@ const cards = document.querySelectorAll('.reviews__card');
 const reviewsBtn = document.querySelector('.reviews__button');
 const input = document.querySelectorAll('input');
 const img = document.querySelector('#feedbacImg');
+const burger = document.querySelector('.burger-menu');
+const menu = document.querySelector('.menu');
+
 
 triggers.forEach(trigger => {
 trigger.addEventListener('click', () => {
@@ -106,9 +109,8 @@ const intervalTimeInMs = 4000;
 
 const intervalId = setInterval(changeImage, intervalTimeInMs);
 
-const burger = document.querySelector('.burger-menu');
-const menu = document.querySelector('.menu');
 
 burger.addEventListener('click', () => {
-  burger.classList.toggle('active');
+    burger.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
 });

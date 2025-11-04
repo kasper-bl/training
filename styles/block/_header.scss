@@ -83,9 +83,10 @@
 .menu {
   position: fixed;
   bottom: 0;
-  width: 85%;
-  height: 95vh; 
-  background: white; 
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #ffffff; 
   z-index: 10; 
   display: none; 
   flex-direction: column;
@@ -139,6 +140,7 @@
   }
 
   &__header{
+    width: 95vw;
     display: flex;
     justify-content: space-between;
 
