@@ -1,7 +1,34 @@
+@media (max-width: 500px){
+
+  html{
+    font-size: 14px ;
+  }
+
+  .main-banner__email-form{
+    width: 100%;
+  }
+  .main-banner .text__container{
+    width: 300px;
+  }
+  .tariff {
+
+    &__variant {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .tariff__inner {
+      .tariff__card {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
 @media (max-width: 375px) {
 
     html{
-        font-size: 10px;
+        font-size: 12px;
     }
 
   .padding {
@@ -118,19 +145,7 @@
     }
   }
 
-  // tariff
-  .tariff {
 
-    &__variant {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .tariff__inner {
-      .tariff__card {
-        width: 100%;
-      }
-    }
-  }
 
   // reviews
   .reviews {
@@ -167,9 +182,6 @@
       flex-direction: column;
       gap: 10px;
 
-      h2 {
-
-      }
 
       .email-form {
         input {
@@ -230,9 +242,6 @@
         font-weight: 200;
       }
 
-      p {
-
-      }
     }
 
     .footer__top {

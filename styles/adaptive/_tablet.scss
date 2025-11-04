@@ -1,3 +1,39 @@
+@media (max-width: 1000px){
+    html{
+        font-size: 16px;
+    }
+
+    .reviews{
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__card{
+            position: static;
+            width: 100%;
+        }
+
+
+        &__button{
+            display: none;
+        }
+    }
+
+    .tariff{
+        &__variant{
+
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
     html{
         font-size: 15px;
@@ -50,7 +86,9 @@
 
     }
 
-    //
+    .reviews{
+        padding: 50px 0 80px 0;
+    }
 
      .advantages{
         &__items{
@@ -81,35 +119,8 @@
         }
     }
 
-    //tariff
-
-    .tariff{
-        &__variant{
-
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-
-    // reviews
-
-    .reviews{
-        &__inner{
-            padding-top: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        &__card{
-            position: static;
-        }
 
 
-        &__button{
-            display: none;
-        }
-    }
-
-    
     //mailing
 
     .mailing{
@@ -127,18 +138,25 @@
      //feedback
 
     .feedback{
+
+        
         padding: 30px 0;
+
+        &__form-text{
+            max-width: 100%;
+        }
         &__inner{
             img{
                 display: none;
             }
         }
+        &__form-input input{
+            width: 100%;
+        }
         &__form_text{
             form{
                 .form_input{
-                    input{
-                        width: 600px;
-                    }
+                    width: 100%;
                 }
             }
         }

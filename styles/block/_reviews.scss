@@ -101,24 +101,24 @@
 
   &__card:nth-child(1) {
     top: 50px;
-    left: 20vw;
+    left: 400px;
     z-index: 4;
   }
 
   &__card:nth-child(4) {
-    top: 8vw;
+    top: 170px;
     left: 0;
     z-index: 3;
   }
 
   &__card:nth-child(3) {
-    bottom: 13vw;
-    left: 10vw;
+    bottom: 270px;
+    left: 180px;
     z-index: 1;
   }
 
   &__card:nth-child(2) {
-    bottom: 22vw;
+    bottom: 440px;
     right: 0;
     z-index: 2;
   }
