@@ -1,11 +1,11 @@
 const triggers = document.querySelectorAll('.how-we-work__scroll p');
-const slides = document.querySelectorAll('.how-we-work__slide');
-const images = document.querySelectorAll('.img_emoji img');
+const howWeWorkSlides = document.querySelectorAll('.how-we-work__slide');
+const emojiImages = document.querySelectorAll('.img_emoji img');
 const reviewsContainer = document.querySelector('.reviews__inner'); 
-const cards = document.querySelectorAll('.reviews__card');
-const reviewsBtn = document.querySelector('.reviews__button');
-const input = document.querySelectorAll('input');
-const img = document.querySelector('#feedbacImg');
+const reviewCards = document.querySelectorAll('.reviews__card');
+const structureReviewsBtn = document.querySelector('.reviews__button');
+const formInputs = document.querySelectorAll('input');
+const feedbackImage = document.querySelector('#feedbacImg');
 const languageRu = document.querySelector('.controls__languages--active');
 const languageEn = document.querySelector('.languages__item');
 
@@ -40,22 +40,22 @@ trigger.addEventListener('click', () => {
         const index = parseInt(trigger.dataset.slide);
 
         triggers.forEach(t => t.classList.remove('active'));
-        slides.forEach(s => s.classList.remove('acting'));
+        howWeWorkSlides.forEach(s => s.classList.remove('acting'));
 
-        slides[index].classList.add('acting');
+        howWeWorkSlides[index].classList.add('acting');
         trigger.classList.add('active');
     });
 });
 
 
-images.forEach(img => {
+emojiImages.forEach(img => {
     const origSrc = img.src;
-    const hoverGif = origSrc
-        .replace('/png/emoji/', '/gif/')
+    const gifSrc = origSrc
+        .replace('/emoji/', '/gif/')
         .replace(/\.png$/, '-hover.gif');
 
     img.addEventListener('mouseover', () => {
-        img.src = hoverGif;
+        img.src = gifSrc;
     });
 
     img.addEventListener('mouseout', () => {
@@ -64,7 +64,7 @@ images.forEach(img => {
 });
 
 
-const cardsArray = [...cards];
+const cardsArray = [...reviewCards];
     
 function currentPositions() {
     return cardsArray.map(card => { 
@@ -84,20 +84,20 @@ let positions = currentPositions();
 reviewsContainer.addEventListener('click', (e) => { 
     if (!e.target.closest('.reviews__card')) return; 
 
-    for (let i = 0; i < cards.length; i++) { 
+    for (let i = 0; i < reviewCards.length; i++) { 
         const nextIndex = (i + 1) % 4; 
-        cards[i].style.top = positions[nextIndex].top;
-        cards[i].style.left = positions[nextIndex].left;
-        cards[i].style.right = positions[nextIndex].right;
-        cards[i].style.bottom = positions[nextIndex].bottom;
-        cards[i].style.zIndex = positions[nextIndex].zIndex;
+        reviewCards[i].style.top = positions[nextIndex].top;
+        reviewCards[i].style.left = positions[nextIndex].left;
+        reviewCards[i].style.right = positions[nextIndex].right;
+        reviewCards[i].style.bottom = positions[nextIndex].bottom;
+        reviewCards[i].style.zIndex = positions[nextIndex].zIndex;
     }
     positions = currentPositions();
 });
 
-reviewsBtn.addEventListener('click', () => { 
+structureReviewsBtn.addEventListener('click', () => { 
     reviewsContainer.classList.replace("reviews__inner", "structured");
-    reviewsBtn.remove();
+    structureReviewsBtn.remove();
     const p = document.createElement('p');
     p.textContent = "Котики структурированы";
     p.classList.add('reviews_p')
@@ -106,7 +106,7 @@ reviewsBtn.addEventListener('click', () => {
 })
 
 
-input.forEach(input => { 
+formInputs.forEach(input => { 
     input.addEventListener('mouseenter', function () {
         input.classList.add('hovering');
     });
@@ -126,7 +126,7 @@ const imageSources = [
 
 let imgIndex = 0;
 function changeImage() {
-    img.src = imageSources[imgIndex]; 
+    feedbackImage.src = imageSources[imgIndex]; 
     imgIndex = (imgIndex + 1) % 3; 
 }
 
