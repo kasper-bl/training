@@ -98,3 +98,7 @@ input:focus{
 .no-scroll{
   overflow: hidden;
 }
+
+.controls__languages--active{
+  color: var(--blue-color);
+}

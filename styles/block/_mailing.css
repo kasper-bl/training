@@ -1,0 +1,67 @@
+.mailing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.mailing img {
+  width: 70%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.mailing__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  width: 35%;
+}
+.mailing__text h2 {
+  color: var(--color-text-dark-grey);
+  font-size: 3rem;
+}
+.mailing__form {
+  position: relative;
+}
+.mailing__form .mailing__input {
+  outline: none;
+  background: #F2F2F2;
+  width: 100%;
+  padding: 18px 20px;
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+}
+.mailing__form .mailing__button {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  padding: 10px 20px;
+  background-color: var(--blue-color);
+  color: var(--color-text-while);
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.mailing__form .mailing__button:hover {
+  padding: 8px 20px 12px 20px;
+  -webkit-box-shadow: 0 0 30px rgba(80, 93, 236, 0.2745098039);
+          box-shadow: 0 0 30px rgba(80, 93, 236, 0.2745098039);
+}
+.mailing__text p {
+  line-height: 12px;
+  color: #595959;
+  font-size: 0.6rem;
+}
+.mailing__text p a {
+  color: var(--blue-color);
+}

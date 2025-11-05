@@ -6,8 +6,33 @@ const cards = document.querySelectorAll('.reviews__card');
 const reviewsBtn = document.querySelector('.reviews__button');
 const input = document.querySelectorAll('input');
 const img = document.querySelector('#feedbacImg');
-const burger = document.querySelector('.burger-menu');
-const menu = document.querySelector('.menu');
+const languageRu = document.querySelector('.controls__languages--active');
+const languageEn = document.querySelector('.languages__item');
+
+const burger = document.querySelector('.burger-menu__icon');
+const menu = document.querySelector('.burger-menu__menu');
+const CloseMenu = document.querySelector('.burger-menu--close')
+
+burger.addEventListener('click', () => {
+  menu.classList.toggle('Open');
+  document.body.classList.toggle('no-scroll');
+});
+
+CloseMenu.addEventListener('click', () => { 
+    menu.classList.toggle('Open');
+    document.body.classList.toggle('no-scroll');
+})
+
+
+languageRu.addEventListener('click', () => {
+    languageEn.classList.remove('controls__languages--active');
+    languageRu.classList.add('controls__languages--active');
+});
+
+languageEn.addEventListener('click', () => {
+    languageRu.classList.remove('controls__languages--active');
+    languageEn.classList.add('controls__languages--active');
+});
 
 
 triggers.forEach(trigger => {
@@ -109,8 +134,3 @@ const intervalTimeInMs = 4000;
 
 const intervalId = setInterval(changeImage, intervalTimeInMs);
 
-
-burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    document.body.classList.toggle('no-scroll');
-});

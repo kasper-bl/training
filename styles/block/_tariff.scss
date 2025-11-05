@@ -16,7 +16,7 @@
   &__card {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transform: 2s easy;
+    transition: all 0.5s ease;
     background-color: #F8F8F8;
 
   }
