@@ -319,6 +319,8 @@ a {
   font-size: 2.5rem;
   color: var(--color-text-dark-grey);
   font-weight: 600;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .burger-menu__nav a:hover {
   color: var(--hover-blue);
@@ -335,6 +337,8 @@ a {
 .burger-menu__languages p {
   font-size: 2.5rem;
   font-weight: 600;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .burger-menu__languages p:hover {
   color: var(--hover-blue);
