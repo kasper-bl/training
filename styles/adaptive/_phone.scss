@@ -1,0 +1,256 @@
+@media (max-width: 500px){
+
+  html{
+    font-size: 14px ;
+  }
+
+  .main-banner__email-form{
+    width: 100%;
+  }
+  .main-banner .text__container{
+    width: 300px;
+  }
+  .tariff {
+
+    &__variant {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .tariff__inner {
+      .tariff__card {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 375px) {
+
+    html{
+        font-size: 12px;
+    }
+
+  .padding {
+    padding: 14px 20px;
+  }
+
+  // header
+  header {
+    .header {
+      &__inner {
+        .header__logo {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+
+        .header__nav {
+          nav {
+            display: none;
+          }
+        }
+
+        .header__controls {
+          img {
+            display: inline;
+            cursor: pointer;
+          }
+
+          a {
+            display: none;
+          }
+
+          .controls__languages {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  // main-banner
+
+    .main-banner .text__container {
+        width: 100%; 
+    }
+
+    .main-banner__email-form {
+        width: 100%; 
+    }
+    .main-banner {
+    .main-banner__container {
+
+      .main-banner__text {
+        .main-banner__email-form {
+          input {
+            width: 80vw;
+          }
+
+          button {
+            left: 190px; 
+          }
+        }
+      }
+    }
+  }
+
+  // advantages
+  .advantages {
+    h2 {
+      font-size: 20px;
+    }
+
+    .advantages__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+
+      .advantages__card {
+        max-width: 100%;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  // how-we-work
+  .how-we-work {
+    background: 
+      radial-gradient(circle at bottom left, #D3B9E5, transparent 35%),
+      radial-gradient(circle at right 60%, #D3B9E5, #D1D0F6, transparent 45%);
+    height: auto;
+    padding-bottom: 50px;
+
+    .how-we-work__inner {
+      .how-we-work__item {
+        flex-direction: column;
+        gap: 20px;
+
+        .how-we-work__img {
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+
+        .how-we-work__content-text {
+          gap: 30px;
+          width: auto;
+        }
+      }
+    }
+  }
+
+
+
+  // reviews
+  .reviews {
+    .reviews__inner {
+        height: auto;
+      .reviews__card {
+        width: 100%;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .reviews__button {
+      display: none;
+    }
+  }
+
+  // mailing
+  .mailing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .mailing__text {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+
+      .email-form {
+        input {
+          width: 100%;
+        }
+
+        .submit-button {
+          right: 24px;
+        }
+      }
+    }
+  }
+
+  // feedback
+
+  .feedback__inner {
+    height: auto;
+  }
+
+  .feedback__form-text {
+    width: 100%;
+  }
+
+  .feedback__form-input input{
+    width: 100%;
+  }
+  .feedback {
+    .feedback__container {
+      img {
+        display: none;
+      }
+
+      .feedback__text {
+        form {
+          .form-input {
+            input {
+              width: 100%;
+            }
+          }
+        }
+
+        .form-button {
+          flex-direction: column;
+
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  // footer
+  footer {
+    .footer__text {
+      h2 {
+
+        font-weight: 200;
+      }
+
+    }
+
+    .footer__top {
+      display: flex;
+      gap: 2px;
+
+    }
+    img{
+        display: none;
+    }
+  }
+}

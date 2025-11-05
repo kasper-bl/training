@@ -1,0 +1,147 @@
+.how-we-work {
+  background: radial-gradient(circle at bottom left, #D3B9E5, transparent 35%), 
+              radial-gradient(circle at 88% top, #D3B9E5, #D1D0F6, transparent 45%);
+  animation: gradientHowWeWork 10s infinite;
+
+  @keyframes gradientHowWeWork {
+    0% {
+      background: radial-gradient(circle at bottom left, #d3b9e5, transparent 35%),
+                  radial-gradient(circle at 88% top, #d3b9e5, #d1d0f6, transparent 45%);
+    }
+    10% {
+      background: radial-gradient(circle at bottom left, #d2bce6, transparent 35%),
+                  radial-gradient(circle at 88% top, #d2bce6, #d2cdf5, transparent 45%);
+    }
+    20% {
+      background: radial-gradient(circle at bottom left, #d2c1eb, transparent 35%),
+                  radial-gradient(circle at 88% top, #d2c1eb, #d2c1eb, transparent 45%);
+    }
+    30% {
+      background: radial-gradient(circle at bottom left, #d2cdf5, transparent 35%),
+                  radial-gradient(circle at 88% top, #d2cdf5, #d2bce6, transparent 45%);
+    }
+    40% {
+      background: radial-gradient(circle at bottom left, #d1d0f6, transparent 35%),
+                  radial-gradient(circle at 88% top, #d1d0f6, #d3b9e5, transparent 45%);
+    }
+    50% {
+      background: radial-gradient(circle at bottom left, #d2d0f0, transparent 35%),
+                  radial-gradient(circle at 88% top, #d2d0f0, #d3bde1, transparent 45%);
+    }
+    60% {
+      background: radial-gradient(circle at bottom left, #d2c1eb, transparent 35%),
+                  radial-gradient(circle at 88% top, #d2c1eb, #d2c1eb, transparent 45%);
+    }
+    70% {
+      background: radial-gradient(circle at bottom left, #d3bde1, transparent 35%),
+                  radial-gradient(circle at 88% top, #d3bde1, #d2d0f0, transparent 45%);
+    }
+    80% {
+      background: radial-gradient(circle at bottom left, #d3b9e5, transparent 35%),
+                  radial-gradient(circle at 88% top, #d3b9e5, #d1d0f6, transparent 45%);
+    }
+    90% {
+      background: radial-gradient(circle at bottom left, #d2bbf0, transparent 35%),
+                  radial-gradient(circle at 88% top, #d2bbf0, #d2cdfa, transparent 45%);
+    }
+    100% {
+      background: radial-gradient(circle at bottom left, #d3b9e5, transparent 35%),
+                  radial-gradient(circle at 88% top, #d3b9e5, #d1d0f6, transparent 45%);
+    }
+  }
+
+  &__slide {
+    display: none;
+    animation: slideFadeIn 0.4s ease;
+
+  }
+
+  .acting{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @keyframes slideFadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  }
+
+  
+
+  &__scroll {
+    p {
+      color: var(--color-text-while); 
+      transition: color 0.2s;
+    }
+
+    .active{
+      color: var(--blue-color);
+    }
+  }
+    &__img img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+  }
+
+  &__content {
+    h2 {
+      padding: 50px 0 30px;
+      font-size: 2rem;
+      color: var(--color-text-dark-grey);
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 4%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 40%;
+
+    h3 {
+      font-size: 2rem;
+      color: var(--color-text-dark-grey);
+    }
+  }
+
+
+  &__scroll {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    
+
+    p:not(:last-child) {
+      position: relative;
+      padding-right: 30px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        width: 1px;
+        height: 20px;
+        background: #fff;
+        border-radius: 2px;
+      }
+    }
+
+  }
+
+  &__btn {
+    padding-top: 3vw;
+    .button {
+      width: 200px;
+    }
+  }
+}

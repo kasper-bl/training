@@ -1,0 +1,168 @@
+.header {
+  padding: 16px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    column-gap: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-weight: 500;
+      font-size: 1rem;
+
+      a {
+        color: var(--blue-color);
+      }
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  &__nav {
+    gap: 60px;
+
+    display: flex;
+  }
+
+  &__menu {
+    column-gap: 15px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+
+  &__menu a:hover{
+    color: var(--hover-blue);
+  }
+  &__menu a:active{
+    color: var(--active-dark-blue);
+  }
+
+  &__controls {
+    column-gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .controls__languages {
+      column-gap: 5px;
+      display: flex;
+      align-items: center;
+
+      p{
+        cursor: pointer;
+      }
+      p:hover{
+        color: var(--hover-blue);
+      }
+    }
+    img {
+      display: none;
+    }
+  }
+
+  .burger-menu__menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    z-index: 10;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+
+.burger-menu__menu.Open {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.burger-menu{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+
+  &__menu{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px; 
+
+  }
+  &__nav a{
+    font-size: 2.5rem;
+    color: var(--color-text-dark-grey);
+    font-weight: 600;
+    transition: all 0.5s ease;
+  }
+
+  &__nav a:hover{
+    color: var(--hover-blue);
+    
+  }
+
+  &__nav a:active{
+    color: var(--active-dark-blue);
+  }
+  &__languages{
+    display: flex;
+    gap: 5px;
+  }
+  &__languages p{
+    font-size: 2.5rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+  }
+
+  &__languages p:hover{
+    color: var(--hover-blue);
+  }
+
+  &__header{
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+
+    .header__content{
+      align-items: center;
+      display: flex;
+      gap: 5px;
+    }
+  }
+  p{
+    padding: 20px 0;
+  }
+
+
+}
+
+
+
+
+
+

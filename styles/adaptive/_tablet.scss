@@ -1,0 +1,167 @@
+@media (max-width: 1000px){
+    html{
+        font-size: 16px;
+    }
+
+    .reviews{
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__card{
+            position: static;
+            width: 100%;
+        }
+
+
+        &__button{
+            display: none;
+        }
+    }
+
+    .tariff{
+        &__variant{
+
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    html{
+        font-size: 15px;
+    }
+    .header{
+
+
+        &__logo{
+            img{
+                display: inline;
+                cursor: pointer;
+            }
+
+            .logo{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+
+        &__nav{
+            nav{
+                display: none;
+            }
+        }
+
+        &__controls{
+            .controls__languages {
+                display: none;
+            }
+        }
+
+    }
+
+    //main
+
+    .main-banner{
+        background: radial-gradient( circle at left 75%,#D3B9E5, #D1D0F6, transparent 55% );
+        &__container{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__mouse{
+            display: none;
+        }
+
+        .text__container{
+            width: 500px;
+        }
+
+    }
+
+    .reviews{
+        padding: 50px 0 80px 0;
+    }
+
+     .advantages{
+        &__items{
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 20px;
+        }
+        &__items-card{
+                max-width: 100%;
+            }
+    }
+
+    // how we week
+
+    .how-we-work{
+        background: 
+        radial-gradient(circle at bottom left, #D3B9E5, transparent 35%),
+        radial-gradient(  circle at right 60%, 
+        #D3B9E5, #D1D0F6, transparent 45%);
+        padding-bottom: 50px;
+        &__item{
+                flex-direction: column;
+                gap: 20px;
+            }
+        &__text{
+            gap: 30px;
+            width: auto;
+        }
+    }
+
+
+
+    //mailing
+
+    .mailing{
+        flex-direction: column;
+        gap: 30px;
+        &__text{
+            gap: 30px;
+            width: 90%;
+            .mailing__form{
+                width: 80%;
+            }
+        }
+    }
+
+     //feedback
+
+    .feedback{
+
+        
+        padding: 30px 0;
+
+        &__form-text{
+            max-width: 100%;
+        }
+        &__inner{
+            img{
+                display: none;
+            }
+        }
+        &__form-input input{
+            width: 100%;
+        }
+        &__form_text{
+            form{
+                .form_input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+    

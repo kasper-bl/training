@@ -1,0 +1,137 @@
+.main-banner {
+  background: radial-gradient(circle at bottom left,#D3B9E5, #D1D0F6, transparent 35% );
+  animation: gradient 10s infinite;
+
+  @keyframes gradient {
+    0% {
+      background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%);
+    }
+    10% {
+      background: radial-gradient(circle at bottom left, #d2bce6, #d2cdf5, transparent 35%);
+    }
+    20% {
+      background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%);
+    }
+    30% {
+      background: radial-gradient(circle at bottom left, #d2cdf5, #d2bce6, transparent 35%);
+    }
+    40% {
+      background: radial-gradient(circle at bottom left, #d1d0f6, #d3b9e5, transparent 35%);
+    }
+    50% {
+      background: radial-gradient(circle at bottom left, #d2d0f0, #d3bde1, transparent 35%);
+    }
+    60% {
+      background: radial-gradient(circle at bottom left, #d2c1eb, #d2c1eb, transparent 35%),
+    }
+    70% {
+      background: radial-gradient(circle at bottom left, #d3bde1, #d2d0f0, transparent 35%),
+    }
+    80% {
+      background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%),
+    }
+    90% {
+      background: radial-gradient(circle at bottom left, #d2bbf0, #d2cdfa, transparent 35%);
+    }
+    100% {
+      background: radial-gradient(circle at bottom left, #d3b9e5, #d1d0f6, transparent 35%),
+
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+
+    h1 {
+      color: var(--color-text-dark-grey);
+      padding-bottom: 25px;
+      font-size: 3.1rem;
+    }
+
+    .text__container{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+  }
+
+  &__email-form {
+    position: relative;
+    width: 420px; 
+
+    .main-form__email-input {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 1) 0%);
+      width: 100%;
+      outline: none;
+      padding: 15px 16px;
+      border-radius: 10px;
+      border: none;
+    }
+
+
+    .main-form__submit-button {
+      position: absolute;
+      right: 10px; 
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px 20px;
+      background-color: #fff;
+      color: var(--blue-color);
+      font-weight: 600;
+      border: none;
+      border-radius: 5px;  
+      cursor: pointer;
+    }
+
+    .main-form__submit-button:hover{
+      padding: 8px 20px 12px 20px;
+      box-shadow: 0 0 30px #505dec28;
+    }
+
+    .main-form__submit-button:active{
+      color: #2F3BB7;
+    }
+  }
+
+  &__text > p {
+    color: #595959;
+
+    a {
+      color: var(--blue-color);
+    }
+  }
+
+  &__mouse {
+    padding-top: 10vw;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+    p {
+      color: var(--color-text-while); 
+    }
+
+    img:hover{
+      fill: #626EEB; // не работает пока
+    }
+    p:hover{
+      color: var(--hover-blue);
+    }
+  }
+  &__img img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}

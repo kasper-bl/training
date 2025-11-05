@@ -1,0 +1,125 @@
+@media (max-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+  .reviews__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .reviews__card {
+    position: static;
+    width: 100%;
+  }
+  .reviews__button {
+    display: none;
+  }
+  .tariff__variant {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  .header__logo img {
+    display: inline;
+    cursor: pointer;
+  }
+  .header__logo .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__nav nav {
+    display: none;
+  }
+  .header__controls .controls__languages {
+    display: none;
+  }
+  .main-banner {
+    background: radial-gradient(circle at left 75%, #D3B9E5, #D1D0F6, transparent 55%);
+  }
+  .main-banner__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main-banner__mouse {
+    display: none;
+  }
+  .main-banner .text__container {
+    width: 500px;
+  }
+  .reviews {
+    padding: 50px 0 80px 0;
+  }
+  .advantages__items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .advantages__items-card {
+    max-width: 100%;
+  }
+  .how-we-work {
+    background: radial-gradient(circle at bottom left, #D3B9E5, transparent 35%), radial-gradient(circle at right 60%, #D3B9E5, #D1D0F6, transparent 45%);
+    padding-bottom: 50px;
+  }
+  .how-we-work__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .how-we-work__text {
+    gap: 30px;
+    width: auto;
+  }
+  .mailing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .mailing__text {
+    gap: 30px;
+    width: 90%;
+  }
+  .mailing__text .mailing__form {
+    width: 80%;
+  }
+  .feedback {
+    padding: 30px 0;
+  }
+  .feedback__form-text {
+    max-width: 100%;
+  }
+  .feedback__inner img {
+    display: none;
+  }
+  .feedback__form-input input {
+    width: 100%;
+  }
+  .feedback__form_text form .form_input {
+    width: 100%;
+  }
+}

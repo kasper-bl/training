@@ -1,0 +1,105 @@
+.accordion {
+    padding: 50px 0;
+    background: radial-gradient(circle at top right, rgb(211, 185, 229), transparent 50%),
+                radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+    animation: gradientAccordion 10s infinite;
+
+    @keyframes gradientAccordion {
+        0% {
+            background: radial-gradient(circle at top right, #d3b9e5, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+        }
+        10% {
+            background: radial-gradient(circle at top right, #d2bce6, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(210, 188, 230, 0.6), rgba(210, 205, 245, 0.7), transparent 30%);
+        }
+        20% {
+            background: radial-gradient(circle at top right, #d2c1eb, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(210, 193, 235, 0.6), rgba(210, 193, 235, 0.7), transparent 30%);
+        }
+        30% {
+            background: radial-gradient(circle at top right, #d2cdf5, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(210, 205, 245, 0.6), rgba(210, 188, 230, 0.7), transparent 30%);
+        }
+        40% {
+            background: radial-gradient(circle at top right, #d1d0f6, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(209, 208, 246, 0.6), rgba(211, 185, 229, 0.7), transparent 30%);
+        }
+        50% {
+            background: radial-gradient(circle at top right, #d2d0f0, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(210, 208, 240, 0.6), rgba(211, 189, 225, 0.7), transparent 30%);
+        }
+        60% {
+            background: radial-gradient(circle at top right, #d2c1eb, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(210, 193, 235, 0.6), rgba(210, 193, 235, 0.7), transparent 30%);
+        }
+        70% {
+            background: radial-gradient(circle at top right, #d3bde1, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(211, 189, 225, 0.6), rgba(210, 208, 240, 0.7), transparent 30%);
+        }
+        80% {
+            background: radial-gradient(circle at top right, #d3b9e5, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+        }
+        90% {
+            background: radial-gradient(circle at top right, #d2bbf0, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(210, 187, 240, 0.6), rgba(210, 205, 250, 0.7), transparent 30%);
+        }
+        100% {
+            background: radial-gradient(circle at top right, #d3b9e5, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(211, 185, 229, 0.6), rgba(209, 208, 246, 0.7), transparent 30%);
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h2 {
+            color: var(--color-text-dark-grey);
+            font-size: 2rem;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__box {
+        border-radius: 15px;
+
+        .label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            border-radius: 16px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.349) 0%, rgba(255, 255, 255, 1) 30%);
+
+            p {
+                color: var(--color-text-dark-grey);
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .content {
+            padding: 16px 20px;
+            color: var(--color-text-gray);
+            font-size: 1rem;
+            line-height: 25px;
+            border-radius: 0 0 15px 15px;
+            background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.185) 30%);
+        }
+    }
+
+    .accordion__box summary img {
+        transition: transform 0.3s ease;
+    }
+
+    .accordion__box[open] summary img {
+        transform: rotate(45deg);
+    }
+}
